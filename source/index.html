@@ -102,12 +102,9 @@
           <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <cite class="reviews__author-link">@misssssiskras</cite>
-          <!-- <ul class="reviews__arrows">
-            <li class="reviews__left-arrow"><a href="#">Назад</a></li>
-            <li class="reviews__right-arrow"><a href="#">Вперед</a></li>
-          </ul> -->
           <button class="reviews__prev" type="button">Назад</button>
           <button class="reviews__next" type="button">Вперед</button>
+          <a href="" class="reviews__to-write button">Написать</a>
         </div>
       </section>
 
@@ -130,22 +127,45 @@
         </div>
         <a href="#" class="contacts__write-to button">Напишите нам</a>
       </section>
+    </main>
 
-      <footer class="page-footer">
+    <footer class="page-footer">
+        <h2 class="visually-hidden">Мишка в социальных сетях</h2>
         <div class="page-footer__wrapper">
           <ul class="page-footer__social social">
             <li class="social__item"><a href="#" class="social__link social__link--instagram">Instagram</a></li>
             <li class="social__item"><a href="#" class="social__link social__link--facebook">Facebook</a></li>
             <li class="social__item"><a href="#" class="social__link social__link--twitter">Twitter</a></li>
           </ul>
-          <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано</b>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__logo-image" width="27" height="34">
-            </a>
-          </div>
-      </footer>
-    </main>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="http://placehold.it/27x34" alt="HTML Academy" class="copyright__logo-image" width="27" height="34">
+          </a>
+        </div>
+    </footer>
+
+    <section class="add-to-basket">
+      <h2 class="add-to-basket__title">Добавить в корзину</h2>
+      <b class="add-to-basket__text">Выберите размер:</b>
+      <form class="add-to-basket__form select-size" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="select-size__list">
+          <li class="select-size__item">
+            <label for="small" class="select-size__title">S</label>
+            <input type="radio" class="select-size__input" name="size" id="small" value="small">
+          </li>
+          <li class="select-size__item">
+            <label for="medium" class="select-size__title">M</label>
+            <input type="radio" class="select-size__input" name="size" id="medium" value="medium">
+          </li>
+          <li class="select-size__item">
+            <label for="large" class="select-size__title">L</label>
+            <input type="radio" class="select-size__input" name="size" id="large" value="large">
+          </li>
+        </ul>
+        <button type="submit" class="button select-size__add">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
