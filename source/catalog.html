@@ -26,39 +26,47 @@
     <main class="page-main">
 
       <section class="catalog">
+        <h1 class="page-main__title">Каталог товаров</h1>
         <div class="catalog__wrapper">
-          <h1 class="page-main__title">Каталог товаров</h1>
-          <ul class="-list">
+          <ul class="catalog-list">
             <li class="catalog__item product">
-              <a href="#">
-                <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" class="product__image" width="260" height="195">
+              <a class="product__image" href="#">
+                <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" width="260" height="195">
               </a>
-              <a href="#">
-                <h2 class="product__title">Зайчик-попрыгайчик</h2>
-              </a>
-              <b class="product__specs">Рост 30 см, вес 200 г</b>
-              <b class="product__price">1 200 руб.</b>
-              <a href="#" class="product__add-to basket-button">Заказать</a>
+              <div class="product__wrapper">
+                <a href="#">
+                  <h2 class="product__title">Зайчик-попрыгайчик</h2>
+                </a>
+                <b class="product__specs">Рост 30 см, вес 200 г</b>
+                <b class="product__price">1 200 руб.</b>
+                <a href="#" class="product__add-to basket-button">Заказать</a>
+              </div>
             </li>
             <li class="catalog__item product">
-              <a href="#">
-                <img src="http://placehold.it/260x195" alt="Корзинка для белья" class="product__image" width="260" height="195">
+              <a class="product__image" href="#">
+                <img src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
               </a>
-              <h2 class="product__title">Корзинка для белья</h2>
-              <b class="product__specs">Диаметр 15 см, высота 10 см</b>
-              <b class="product__price">690 руб.</b>
-              <a href="#" class="product__add-to basket-button">Заказать</a>
+              <div class="product__wrapper">
+                <a href="#">
+                  <h2 class="product__title">Корзинка для белья</h2>
+                </a>
+                <b class="product__specs">Диаметр 15 см, высота 10 см</b>
+                <b class="product__price">690 руб.</b>
+                <a href="#" class="product__add-to basket-button">Заказать</a>
+              </div>
             </li>
             <li class="catalog__item product">
-              <a href="#">
-                <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" class="product__image" width="260" height="195">
+              <a class="product__image" href="#">
+                <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
               </a>
-              <a href="#">
-                <h2 class="product__title">Большая корзинка для игрушек</h2>
-              </a>
-              <b class="product__specs">Диаметр 30 см, высота 30 см</b>
-              <b class="product__price">1 500 руб.</b>
-              <a href="#" class="product__add-to basket-button">Заказать</a>
+              <div class="product__wrapper">
+                <a href="#">
+                  <h2 class="product__title">Большая корзинка для игрушек</h2>
+                </a>
+                <b class="product__specs">Диаметр 30 см, высота 30 см</b>
+                <b class="product__price">1 500 руб.</b>
+                <a href="#" class="product__add-to basket-button">Заказать</a>
+              </div class="product__wrapper">
             </li>
           </ul>
         </div>
@@ -70,8 +78,10 @@
           <div class="making-info__video-frame">
             <img src="" alt="" class="making-info__video">
           </div>
-          <p class="making-info__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a href="" class="making-info__to-order button">Заказать</a>
+          <div class="making-info__text">
+            <p class="making-info__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="" class="making-info__to-order button">Заказать</a>
+          </div>
         </div>
       </section>
     </main>
