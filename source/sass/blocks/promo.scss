@@ -1,0 +1,23 @@
+.promo__title {
+  @include font-config(27px, bold);
+}
+
+.promo__list {
+  @include listreset;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__link-title {
+  @include font-config(19px, bold, #ffffff);
+  text-decoration: none;
+  display: block;
+
+  &--things {
+    background: #63d1bb;
+  }
+
+  &--toys {
+    background: #56c3b2;
+  }
+}

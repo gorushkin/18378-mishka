@@ -1,0 +1,19 @@
+.product-card__title {
+  @include font-config(24px, bold);
+}
+
+.product-card__feature {
+  @include font-config(17px, bold, #63d1bb);
+}
+
+.product-card__description {
+  @include font-config(15px, regular, #444444);
+}
+
+.product-card__properties {
+  @include font-config(15px, regular, #444444);
+}
+
+.product-card__price {
+  @include font-config(17px, bold, #444444);
+}
