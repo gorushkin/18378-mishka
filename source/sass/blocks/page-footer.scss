@@ -5,4 +5,15 @@
 .social {
   @include listreset;
   display: flex;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
 }
