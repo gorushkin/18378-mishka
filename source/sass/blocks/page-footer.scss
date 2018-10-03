@@ -1,0 +1,8 @@
+.page-footer {
+  background-color: #F1F1F1;
+}
+
+.social {
+  @include listreset;
+  display: flex;
+}

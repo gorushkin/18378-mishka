@@ -1,0 +1,40 @@
+.reviews__title {
+  @include font-config(25px, bold);
+}
+
+.reviews__text {
+  @include font-config(15px, normal, #444444);
+}
+
+.reviews__author-name {
+  @include font-config(17px, bold, #444444);
+  font-style: normal;
+}
+
+.reviews__author-link {
+  @include font-config(17px, normal, #444444);
+  font-style: normal;
+}
+
+.reviews__buttons {
+  display: flex;
+}
+
+.reviews__arrow {
+  border: none;
+  font-size: 0;
+  background-color: #ffffff;
+  height: 52px;
+  border: solid 1px #ececec;
+  box-sizing: border-box;
+  flex-basis: 50%;
+
+  &--left {
+    background: url(../../img/icon-left-arrow.svg) no-repeat 50% 50%;
+  }
+
+  &--right {
+    background: url(../../img/icon-right-arrow.svg) no-repeat 50% 50%;
+  }
+}
+

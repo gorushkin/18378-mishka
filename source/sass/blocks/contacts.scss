@@ -1,0 +1,19 @@
+.contacts__title {
+  @include font-config(18px, bold);
+}
+
+ .contacts__field,
+ .contacts__value {
+  @include font-config(15px, normal, #444444);
+}
+
+.contacts__map-wrapper {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contacts__map {
+  width: 100%;
+  margin-top: -90px;
+}

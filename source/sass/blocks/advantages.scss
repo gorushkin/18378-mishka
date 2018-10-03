@@ -1,0 +1,11 @@
+.advantages__title {
+  @include font-config(24px, bold, #000000);
+}
+
+.advantages__text {
+  @include font-config(17px, bold, #000000);
+}
+
+.advantages__list {
+  @include listreset;
+}
