@@ -1,5 +1,5 @@
 .promo__title {
-  @include font-config(27px, bold);
+  @include font-config(27px, bold, 30px);
 }
 
 .promo__list {
@@ -9,7 +9,7 @@
 }
 
 .promo__link-title {
-  @include font-config(19px, bold, #ffffff);
+  @include font-config(19px, bold, 24px, #ffffff);
   text-decoration: none;
   display: block;
 

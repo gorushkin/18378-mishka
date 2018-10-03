@@ -1,9 +1,3 @@
-.copyright {
-  // box-shadow: 0 0 0 3px red;
-  // display: flex;
-  // align-items: center;
-}
-
 .copyright__text {
-  @include font-config(19px, bold);
+  @include font-config(19px, normal, 18px);
 }

@@ -4,9 +4,10 @@
   padding: 0;
 }
 
-@mixin  font-config ($font-size, $font-weight, $font-color: #000000) {
+@mixin font-config ($font-size, $font-weight, $line-height, $font-color: #000000) {
   font-family: $main-font;
   font-size: $font-size;
+  line-height: $line-height;
   font-weight: $font-weight;
   color: $font-color;
 }
