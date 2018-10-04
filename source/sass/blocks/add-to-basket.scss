@@ -1,0 +1,14 @@
+.add-to-basket {
+  border: solid 1px #c6c6c6;
+}
+
+.add-to-basket__title {
+  @include font-config(25px, bold, 1.2);
+  text-align: center;
+}
+
+.add-to-basket__text {
+  @include font-config(15px, normal, 2, #444444);
+  text-align: center;
+  display: block;
+}

@@ -1,4 +1,5 @@
-@import "fonts.scss", "normalize.scss";
+@import "blocks/visually-hidden.scss";
+@import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/body.scss";
@@ -12,3 +13,5 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
+@import "blocks/add-to-basket.scss";
+@import "blocks/select-size.scss";

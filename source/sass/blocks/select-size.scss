@@ -1,0 +1,25 @@
+.select-size__list {
+  @include listreset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-size__item {
+  flex-basis: 31%;
+}
+
+.select-size__title {
+  @include font-config(17px, bold, 48px, #444444);
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border: solid 2px #63d1bb;
+}
+
+.select-size__add {
+  color: #ffffff;
+  background-color: #63d1bb;
+  border: solid 2px #63d1bb;
+  cursor: pointer;
+  width: 100%;
+}
