@@ -2,12 +2,13 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  // box-shadow: 0 0 0 3px red;
   background: $bg-color;
-  // padding-left: 30px;
-  // padding-right: 30px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }

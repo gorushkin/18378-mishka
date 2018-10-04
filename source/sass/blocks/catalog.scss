@@ -6,9 +6,10 @@
 
 .catalog__wrapper {
   @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog-list {
   @include listreset;
-  margin: 0 auto;
 }

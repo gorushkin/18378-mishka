@@ -1,0 +1,22 @@
+.making-info {
+  @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.making-info__title {
+  @include font-config(17px, bold, 24px);
+}
+
+.making-info__video-frame {
+  background: url("../../img/video-mobile@1x.jpg") no-repeat center;
+  width: 260px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.making-info__description {
+  @include font-config(13px, normal, 22px, #444444);
+}

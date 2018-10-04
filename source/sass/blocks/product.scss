@@ -1,9 +1,17 @@
-.product {
-  box-shadow: 0 0 0 3px red;
-}
-
 .product__image img {
   width: auto;
-  // width: 100%;
   display: block;
 }
+
+.product__title {
+  @include font-config(17px, bold, 24px);
+}
+
+.product__specs {
+  @include font-config(13px, normal, 30px, #444444);
+}
+
+.product__price {
+  @include font-config(15px, bold, 24px, #444444);
+}
+
