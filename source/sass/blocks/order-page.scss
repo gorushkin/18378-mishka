@@ -1,0 +1,17 @@
+.order-page__title {
+  @include font-config(27px, bold, 30px);
+  background-color: #f1f1f1;
+  text-align: center;
+
+}
+
+.order-page__wrapper {
+  @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 3px red;
+}
+
+.order-page__text {
+  @include font-config(13px, normal, 24px, #444444);
+}

@@ -1,15 +1,15 @@
 .page-header {
   margin: 0 auto;
   width: 320px;
-  @include pad-left-right;
+  // @include pad-left-right;
 }
 
 .page-header__logo {
   display: block;
+  box-sizing: border-box;
   text-align: center;
 }
 
 .page-header__logo-image {
-  width: 86px;
-  height: 35px;
+  margin: 22px 0;
 }

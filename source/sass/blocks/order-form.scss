@@ -1,0 +1,15 @@
+.order-form__title {
+  @include font-config(17px, bold, 16px, #63d1bb);
+}
+
+.order-form__list {
+  @include listreset;
+}
+
+.order-form__label {
+  @include font-config(17px, bold, 18px);
+}
+
+.order-form_sub-text {
+  @include font-config(14px, normal, 16px, #444444);
+}
