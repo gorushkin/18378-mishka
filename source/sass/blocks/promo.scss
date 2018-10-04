@@ -11,8 +11,8 @@
 
 .promo__title {
   @include font-config(27px, bold, 30px);
-  text-align: center;
   @include pad-left-right;
+  text-align: center;
 }
 
 .promo__list {
@@ -23,11 +23,11 @@
 
 .promo__link-title {
   @include font-config(19px, bold, 24px, #ffffff);
+  @include pad-left-right;
   text-decoration: none;
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  @include pad-left-right;
 
   &--things {
     background: #63d1bb;

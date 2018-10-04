@@ -1,7 +1,7 @@
 .product-card__wrapper {
+  @include pad-left-right;
   margin: 0 auto;
   width: 320px;
-  @include pad-left-right;
 }
 
 .product-card__title {
