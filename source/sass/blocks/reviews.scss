@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  @include pad-left-right;
+}
+
 .reviews__title {
   @include font-config(25px, bold, 30px);
 }

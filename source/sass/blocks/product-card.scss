@@ -1,3 +1,7 @@
+.product-card__wrapper {
+  @include pad-left-right;
+}
+
 .product-card__title {
   @include font-config(25px, bold, 30px);
 }

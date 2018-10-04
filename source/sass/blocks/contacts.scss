@@ -1,3 +1,7 @@
+.contacts__wrapper {
+  @include pad-left-right;
+}
+
 .contacts__title {
   @include font-config(18px, 30px, bold);
 }
@@ -14,6 +18,7 @@
   height: 350px;
   width: 100%;
   overflow: hidden;
+
 }
 
 .contacts__map {
