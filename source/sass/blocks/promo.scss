@@ -4,11 +4,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 0 auto;
+  width: 320px;
+  // @include pad-left-right;
 }
 
 .promo__title {
   @include font-config(27px, bold, 30px);
   text-align: center;
+  @include pad-left-right;
 }
 
 .promo__list {
@@ -23,6 +27,7 @@
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
+  @include pad-left-right;
 
   &--things {
     background: #63d1bb;

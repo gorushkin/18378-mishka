@@ -1,4 +1,6 @@
 .product-card__wrapper {
+  margin: 0 auto;
+  width: 320px;
   @include pad-left-right;
 }
 
@@ -16,6 +18,10 @@
 
 .product-card__properties {
   @include font-config(15px, regular, 20px, #444444);
+}
+
+.product-card__image {
+  margin: 0;
 }
 
 .product-card__price {

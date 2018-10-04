@@ -1,9 +1,8 @@
 .add-to-basket {
   @include pad-left-right;
-}
-
-.add-to-basket {
   border: solid 1px #c6c6c6;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .add-to-basket__title {

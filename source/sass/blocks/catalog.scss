@@ -1,0 +1,14 @@
+.page-main__title {
+  @include font-config(27px, bold, 30px);
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.catalog__wrapper {
+  @include pad-left-right;
+}
+
+.catalog-list {
+  @include listreset;
+  margin: 0 auto;
+}

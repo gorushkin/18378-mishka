@@ -1,5 +1,7 @@
 .reviews__wrapper {
   @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -8,6 +10,7 @@
 
 .reviews__text {
   @include font-config(15px, normal, 30px, #444444);
+  margin: 0;
 }
 
 .reviews__author-name {
@@ -29,7 +32,6 @@
   font-size: 0;
   background-color: #ffffff;
   height: 52px;
-  // box-sizing: border-box;
   flex-basis: 50%;
 
   &--left {

@@ -1,6 +1,10 @@
 .page-footer {
   background-color: #f1f1f1;
+}
+.page-footer__wrapper {
   @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .social {

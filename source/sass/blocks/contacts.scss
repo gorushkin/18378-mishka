@@ -1,9 +1,14 @@
 .contacts__wrapper {
   @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contacts__title {
   @include font-config(18px, 30px, bold);
+  @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contacts__field {
@@ -18,7 +23,6 @@
   height: 350px;
   width: 100%;
   overflow: hidden;
-
 }
 
 .contacts__map {
