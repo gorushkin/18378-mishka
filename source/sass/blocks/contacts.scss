@@ -1,3 +1,7 @@
+.contacts {
+  margin-bottom: 45px;
+}
+
 .contacts__wrapper {
   @include pad-left-right;
   width: 320px;
@@ -9,20 +13,34 @@
   @include pad-left-right;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.contacts__info {
+  margin-bottom: 40px;
+}
+
+.contacts__email,
+.contacts__adress {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__field {
   @include font-config(15px, normal, 30px, #444444);
+  width: 50px;
 }
 
 .contacts__value {
   @include font-config(15px, normal, 30px, #444444);
+  width: 180px;
 }
 
 .contacts__map-wrapper {
   height: 350px;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 35px;
 }
 
 .contacts__map {

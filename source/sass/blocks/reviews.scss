@@ -1,3 +1,9 @@
+.reviews {
+  margin-bottom: 80px;
+  // background: url("../../img/bg-zigzag-fill.svg") repeat-x bottom;
+  // box-shadow: 0 0 0 3px red;
+}
+
 .reviews__wrapper {
   @include pad-left-right;
   width: 320px;
@@ -11,6 +17,7 @@
 .reviews__text {
   @include font-config(15px, normal, 30px, #444444);
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .reviews__author-name {
@@ -25,6 +32,7 @@
 
 .reviews__buttons {
   display: flex;
+  margin-bottom: 35px;
 }
 
 .reviews__arrow {
