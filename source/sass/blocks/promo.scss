@@ -1,6 +1,6 @@
 .promo__wrapper {
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center top;
-  min-height: 350px;
+  // min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -23,25 +23,20 @@
   flex-direction: column;
 }
 
-.promo__item {
+.promo__link {
+  @include pad-left-right;
   @include font-config(19px, bold, 24px, #ffffff);
-  text-decoration: none;
   display: block;
+  padding-top: 28px;
+  padding-bottom: 27px;
 
   &--things {
-    background: #63d1bb;
+    background-color: #63d1bb;
   }
 
   &--toys {
     background: #56c3b2;
   }
-}
-
-.promo__link {
-  @include pad-left-right;
-  display: block;
-  padding-top: 28px;
-  padding-bottom: 27px;
 }
 
 .promo__catalog-title {
