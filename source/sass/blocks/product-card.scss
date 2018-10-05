@@ -1,9 +1,18 @@
+.product-card {
+  // margin-bottom: 80px;
+  // padding-bottom: 40px;
+  // position: relative;
+  background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+  background-size: 350px 23px;
+  padding-bottom: 55px;
+}
+
 .product-card__wrapper {
   @include pad-left-right;
   margin: 0 auto;
   width: 320px;
   padding-top: 4px;
-  margin-bottom: 65px;
+  // margin-bottom: 65px;
 }
 
 .product-card__title {
