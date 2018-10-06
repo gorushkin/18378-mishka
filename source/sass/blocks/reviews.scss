@@ -1,0 +1,52 @@
+.reviews {
+  margin-bottom: 80px;
+  // background: url("../../img/bg-zigzag-fill.svg") repeat-x bottom;
+  // box-shadow: 0 0 0 3px red;
+}
+
+.reviews__wrapper {
+  @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  @include font-config(25px, bold, 30px);
+}
+
+.reviews__text {
+  @include font-config(15px, normal, 30px, #444444);
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__author-name {
+  @include font-config(17px, bold, 24px, #444444);
+  font-style: normal;
+}
+
+.reviews__author-link {
+  @include font-config(17px, normal, 30px, #444444);
+  font-style: normal;
+}
+
+.reviews__buttons {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.reviews__arrow {
+  border: solid 1px #ececec;
+  font-size: 0;
+  background-color: #ffffff;
+  height: 52px;
+  flex-basis: 50%;
+
+  &--left {
+    background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
+  }
+
+  &--right {
+    background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  }
+}

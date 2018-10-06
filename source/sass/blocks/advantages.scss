@@ -1,0 +1,51 @@
+.advantages {
+  margin-bottom: 60px;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  width: 320px;
+
+
+  @include pad-left-right;
+}
+
+.advantages__title {
+  @include font-config(24px, bold, 30px, #000000);
+}
+
+.advantages__item {
+  padding-top: 35px;
+
+  &--flower {
+    background: url("../../img/icon-feature-flower.svg") no-repeat 0 top;
+  }
+
+  &--money {
+    background: url("../../img/icon-feature-money.svg") no-repeat 0 top;
+  }
+
+  &--heart {
+    background: url("../../img/icon-feature-heart.svg") no-repeat 0 top;
+  }
+
+  &--ball {
+    background: url("../../img/icon-feature-ball.svg") no-repeat 0 top;
+  }
+
+  &--rocket {
+    background: url("../../img/icon-feature-rocket.svg") no-repeat 0 top;
+  }
+
+  &--gift {
+    background: url("../../img/icon-feature-gift.svg") no-repeat 0 top;
+  }
+}
+
+.advantages__text {
+  @include font-config(17px, bold, 20px, #000000);
+}
+
+.advantages__list {
+  @include listreset;
+}

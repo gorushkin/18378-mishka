@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  @include pad-left-right;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.social {
+  @include listreset;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.social__link {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+}

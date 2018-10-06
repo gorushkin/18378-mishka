@@ -1,0 +1,11 @@
+.button {
+  @include font-config(17px, bold, 48px, #444444);
+  text-decoration: none;
+  display: block;
+  border: solid 2px #444444;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 0;
+  width: 100%;
+}

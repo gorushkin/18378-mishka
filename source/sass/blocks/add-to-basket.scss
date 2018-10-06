@@ -1,0 +1,18 @@
+.add-to-basket {
+  @include pad-left-right;
+  border: solid 1px #c6c6c6;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.add-to-basket__title {
+  @include font-config(25px, bold, 1.2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.add-to-basket__text {
+  @include font-config(15px, normal, 2, #444444);
+  text-align: center;
+  display: block;
+}
