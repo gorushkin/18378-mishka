@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.main-nav__wrapper {
+  // display: none;
+  width: 320px;
+  // position: absolute;
+  background-color: #ffffff;
+  // box-shadow: 0 0 0 3px red;
+}
+
 .main-nav__toggle {
   border: none;
   font-size: 0;
@@ -11,7 +19,12 @@
   position: absolute;
   top: -50px;
   right: 30px;
+
+  &:active {
+    background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
+  }
 }
+
 
 .main-nav__list {
   @include listreset;

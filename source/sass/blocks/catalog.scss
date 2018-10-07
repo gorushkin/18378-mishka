@@ -1,7 +1,10 @@
-.page-main__title {
+.catalog__title {
   @include font-config(27px, bold, 30px);
   background-color: #f1f1f1;
   text-align: center;
+  padding: 75px 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .catalog__wrapper {
