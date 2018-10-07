@@ -42,5 +42,20 @@
   display: block;
   padding-left: 46px;
   position: relative;
+  box-shadow: 0 0 0 3px blue;
   // box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    order: 3;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
 }

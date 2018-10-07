@@ -8,3 +8,18 @@
   top: 33px;
   left: -5px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+  }
+
+  .main-nav__link--search {
+    @include font-config(0, bold, 24px);
+    // box-shadow: 0 0 0 3px red;
+    width: 0;
+    &:hover {
+      background: red;
+    }
+  }
+}

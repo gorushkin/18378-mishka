@@ -10,4 +10,18 @@
 
 .page-header__logo-image {
   margin: 22px 0;
+  // margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    // box-shadow: 0 0 0 3px red;
+    width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    margin-right: auto;
+  }
 }
