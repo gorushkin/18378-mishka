@@ -2,13 +2,16 @@
   @include font-config(27px, bold, 30px);
   background-color: #f1f1f1;
   text-align: center;
+  padding: 75px 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .order-page__wrapper {
   @include pad-left-right;
   width: 320px;
   margin: 0 auto;
-  box-shadow: 0 0 0 3px red;
+  // box-shadow: 0 0 0 3px red;
 }
 
 .order-page__text {
