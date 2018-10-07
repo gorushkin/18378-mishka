@@ -1,8 +1,6 @@
 .copyright {
-  // box-shadow: 0 0 0 3px red;
   width: 185px;
   margin: 0 auto;
-  // padding: 25px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,10 +9,8 @@
 .copyright__text {
   @include font-config(19px, bold, 18px);
   display: inline-block;
-  // margin-bottom: 35px;
 }
 
 .copyright__logo {
-  // box-shadow: 0 0 0 3px red;
   padding-top: 10px;
 }

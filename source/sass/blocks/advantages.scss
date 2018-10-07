@@ -1,13 +1,15 @@
 .advantages {
   margin-bottom: 60px;
+
 }
 
 .advantages__wrapper {
   margin: 0 auto;
-  width: 320px;
+  width: 260px;
+  // box-shadow: 0 0 0 3px red;
 
 
-  @include pad-left-right;
+  // @include pad-left-right;
 }
 
 .advantages__title {

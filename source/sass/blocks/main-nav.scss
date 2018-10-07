@@ -3,11 +3,9 @@
 }
 
 .main-nav__wrapper {
-  // display: none;
-  width: 320px;
-  // position: absolute;
+  // width: 260px;
   background-color: #ffffff;
-  // box-shadow: 0 0 0 3px red;
+  // background: red;
 }
 
 .main-nav__toggle {
@@ -30,12 +28,19 @@
   @include listreset;
 }
 
+.site-list__item {
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+}
+
 .main-nav__link {
   @include font-config(17px, bold, 24px);
+  width: 260px;
+  margin: 0 auto;
   text-decoration: none;
   padding-top: 29px;
   padding-bottom: 26px;
   display: block;
-  padding-left: 76px;
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  padding-left: 46px;
+  position: relative;
+  // box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }

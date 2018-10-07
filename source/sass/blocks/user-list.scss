@@ -1,9 +1,10 @@
 .user-list__item {
   position: relative;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }
 
 .user-list__img {
   position: absolute;
   top: 33px;
-  left: 25px;
+  left: -5px;
 }
