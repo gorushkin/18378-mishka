@@ -1,5 +1,12 @@
 .product {
+  border: 1px solid #ededed;
+  margin-bottom: 35px;
+}
 
+.product__wrapper {
+  padding: 0 27px;
+  // box-shadow: 0 0 0 3px red;
+  position: relative;
 }
 
 .product__image img {
@@ -11,18 +18,32 @@
 .product__title {
   @include font-config(17px, bold, 24px);
   width: 204px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-  }
 }
 
 .product__specs {
   @include font-config(13px, normal, 30px, #444444);
+  display: block;
+  position: relative;
+  margin-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 204px;
+    height: 1px;
+    background: #ececec;
+    top: 45px;
+    left: 0;
+  }
 }
 
 .product__price {
   @include font-config(15px, bold, 24px, #444444);
 }
+
+.product__order-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+

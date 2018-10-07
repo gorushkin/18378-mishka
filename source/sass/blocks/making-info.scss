@@ -2,10 +2,27 @@
   @include pad-left-right;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 58px;
+}
+
+.making-info__wrapper {
+  border: 1px solid #ededed;
 }
 
 .making-info__title {
   @include font-config(17px, bold, 24px);
+  margin-left: 91px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../../img/icon-video.svg") no-repeat center;
+    top: 10px;
+    left: -65px;
+  }
 }
 
 .making-info__video-frame {
@@ -15,8 +32,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15px;
+}
+
+.making-info__text {
+  padding: 0 34px;
+  margin-bottom: 25px;
 }
 
 .making-info__description {
   @include font-config(13px, normal, 22px, #444444);
+}
+
+.making-info__to-order {
+  margin-bottom: 33px;
 }
