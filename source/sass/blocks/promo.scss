@@ -1,7 +1,12 @@
+.promo {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .promo__wrapper {
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center top;
+  // background-size: cover;
   padding-top: 76px;
-  // box-shadow: 0 0 0 3px red;
+  // box-shadow: 0 0 0 3px blue;
 }
 
 .promo__title {
@@ -9,7 +14,7 @@
   margin: 0 auto;
   text-align: center;
   width: 260px;
-  margin-bottom: 110px;
+  margin-bottom: 140px;
 }
 
 .promo__list {
@@ -24,6 +29,8 @@
   display: block;
   padding-top: 28px;
   padding-bottom: 27px;
+  background-color: transparent;
+  // box-shadow: 0 0 0 3px red;
 
   &--things {
     background-color: #63d1bb;
@@ -45,10 +52,14 @@
   width: 120px;
 }
 
-
 @media (min-width: $tablet-width) {
+  .promo {
+    margin-top: -30px;
+  }
+
   .promo__wrapper {
     background: url("../../img/hero-tablet@1x.jpg") no-repeat center top;
+    background-size: cover;
     padding-top: 76px;
   }
 
@@ -62,12 +73,47 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    // box-shadow: 0 0 0 3px blue;
     width: 668px;
   }
 
   .promo__link {
-    // width: 334px;
     flex-grow: 1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    background: url("../../img/hero-desktop@1x.jpg") no-repeat center top;
+    // background-size: cover;
+    padding-top: 76px;
+  }
+
+  .promo__title {
+    @include font-config(53px, bold, 57px);
+    width: 620px;
+    margin-bottom: 371px;
+  }
+
+  .promo__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1050px;
+  }
+
+  .promo__link {
+    flex-grow: 1;
+  }
+
+  .promo__title-wrapper {
+    margin: 0;
+  }
+
+  .promo__catalog-title {
+    @include font-config(20px, bold, 30px, #ffffff);
+    display: block;
+    text-align: left;
+    width: 120px;
   }
 }
