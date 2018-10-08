@@ -53,6 +53,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    // box-shadow: 0 0 0 3px red;
+    background: url("../../img/review@1x.jpg") no-repeat left center;
+  }
+
   .reviews__wrapper {
     width: 668px;
     display: flex;
@@ -92,5 +97,18 @@
 
   .reviews__arrow {
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background: none;
+  }
+
+  .reviews__wrapper {
+    width: 1050px;
+    padding-left: 175px;
+    // box-shadow: 0 0 0 3px red;
+    background: url("../../img/review@1x.jpg") no-repeat left center;
   }
 }
