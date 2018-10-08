@@ -1,0 +1,6 @@
+@media (min-width: $desktop-width) {
+  .hot-list {
+    @include listreset;
+    display: flex;
+  }
+}

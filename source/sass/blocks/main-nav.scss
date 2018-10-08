@@ -21,7 +21,6 @@
   }
 }
 
-
 .main-nav__list {
   @include listreset;
 }
@@ -47,11 +46,12 @@
     display: none;
   }
 
-  .main-nav {
-    order: 3;
-  }
-
   .main-nav__list {
     display: flex;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    width: auto;
   }
 }
