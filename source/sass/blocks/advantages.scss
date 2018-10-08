@@ -50,3 +50,47 @@
 .advantages__list {
   @include listreset;
 }
+
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    width: 668px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 334px;
+  }
+
+  .advantages__text {
+    width: 295px;
+  }
+
+  .advantages__item--flower {
+    order: 0;
+  }
+
+  .advantages__item--money {
+    order: 2;
+  }
+
+  .advantages__item--heart {
+    order: 4;
+  }
+
+  .advantages__item--ball {
+    order: 1;
+  }
+
+  .advantages__item--rocket {
+    order: 3;
+  }
+
+  .advantages__item--gift {
+    order: 5;
+  }
+}

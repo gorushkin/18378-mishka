@@ -16,9 +16,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     // box-shadow: 0 0 0 3px red;
-    width: 670px;
+    width: 668px;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 0 0 3px red;
   }
 
   .page-header__logo {
