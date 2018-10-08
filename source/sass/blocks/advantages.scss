@@ -5,10 +5,6 @@
 .advantages__wrapper {
   margin: 0 auto;
   width: 260px;
-  // box-shadow: 0 0 0 3px red;
-
-
-  // @include pad-left-right;
 }
 
 .advantages__title {
@@ -101,8 +97,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
-
   .advantages__wrapper {
     width: 700px;
   }
@@ -114,9 +108,5 @@
   .advantages__text {
     @include font-config(20px, bold, 22px);
     width: 295px;
-  }
-
-  .advantages__list {
-    // width: 700px;
   }
 }
