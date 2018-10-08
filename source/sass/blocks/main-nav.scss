@@ -21,37 +21,8 @@
   }
 }
 
-.main-nav__list {
-  @include listreset;
-}
-
-.site-list__item {
-  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
-}
-
-.main-nav__link {
-  @include font-config(17px, bold, 24px);
-  width: 260px;
-  margin: 0 auto;
-  text-decoration: none;
-  padding-top: 29px;
-  padding-bottom: 26px;
-  display: block;
-  padding-left: 46px;
-  position: relative;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-  }
-
-  .main-nav__link {
-    padding: 0;
-    width: auto;
   }
 }

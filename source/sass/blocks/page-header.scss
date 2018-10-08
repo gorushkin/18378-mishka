@@ -38,11 +38,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0 0 0 3px red;
   }
 
   .page-header__user-list {
     order: 1;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__main-nav {
@@ -50,36 +50,51 @@
   }
 
   .page-header__note {
+    @include font-config(15px, normal, 24px, #444444);
     display: block;
     width: 250px;
     order: 3;
+    margin: 0;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__logo {
     width: 150px;
     display: inline-block;
+    flex-grow: 1;
+  }
+
+  .page-header__logo-image {
+    display: block;
+    width: 112px;
+    height: 46px;
+    margin: 21px 0;
+    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1050px;
-    box-shadow: 0 0 0 3px blue;
   }
 
   .page-header__main-nav {
     order: 0;
     width: 450px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__logo {
     order: 1;
     width: 149px;
+    flex-grow: 0;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__user-list {
     width: 451px;
     order: 2;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__hot-list {
@@ -89,5 +104,11 @@
 
   .page-header__note {
     order: 4;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+    margin: 8px 0;
   }
 }

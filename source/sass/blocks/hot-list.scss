@@ -4,3 +4,8 @@
     display: flex;
   }
 }
+
+.hot-list__link {
+  @include font-config(15px, bold, 24px);
+  margin-right: 60px;
+}
