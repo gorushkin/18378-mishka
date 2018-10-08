@@ -57,6 +57,15 @@
     width: 668px;
   }
 
+  .advantages__title {
+    @include font-config(43px, bold, 50px);
+  }
+
+  .advantages__text {
+    @include font-config(20px, bold, 22px);
+    width: 295px;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -64,10 +73,6 @@
 
   .advantages__item {
     width: 334px;
-  }
-
-  .advantages__text {
-    width: 295px;
   }
 
   .advantages__item--flower {
@@ -92,5 +97,26 @@
 
   .advantages__item--gift {
     order: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+
+  .advantages__wrapper {
+    width: 700px;
+  }
+
+  .advantages__title {
+    @include font-config(53px, bold, 57px);
+  }
+
+  .advantages__text {
+    @include font-config(20px, bold, 22px);
+    width: 295px;
+  }
+
+  .advantages__list {
+    // width: 700px;
   }
 }
