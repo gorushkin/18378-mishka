@@ -58,5 +58,34 @@
 @media (min-width: $tablet-width) {
   .product-card__wrapper {
     width: 668px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
   }
+
+  .product-title-wrapper {
+    // box-shadow: 0 0 0 3px red;
+    width: 668px;
+    display: flex;
+  }
+
+  .product-card__info-wrapper {
+    // box-shadow: 0 0 0 3px red;
+    width: 334px;
+  }
+
+  .product-card__image {
+    box-shadow: 0 0 0 3px red;
+    width: 334px;
+    height: 404px;
+    margin: 0;
+  }
+
+  .product-card__button-wrapper {
+    // box-shadow: 0 0 0 3px red;
+    width: 334px;
+    margin-top: -100px;
+  }
+
 }
