@@ -1,13 +1,12 @@
 .social {
   @include listreset;
   display: flex;
+  width: 147px;
   margin: 0 auto;
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-bottom: 27px;
 }
 
 .social__link {
@@ -16,6 +15,7 @@
   height: 28px;
   align-items: center;
   justify-content: center;
+  // box-shadow: 0 0 0 3px rgb(201, 111, 111);
 }
 
 @media (min-width: $tablet-width) {
@@ -23,5 +23,6 @@
     padding: 0;
     margin: 0;
     border-bottom: none;
+    margin-top: 6px;
   }
 }

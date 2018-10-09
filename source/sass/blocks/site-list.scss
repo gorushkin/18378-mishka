@@ -32,10 +32,15 @@
     padding: 0;
     width: auto;
     margin-right: 37px;
+    margin-top: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item {
+    box-shadow: none;
+  }
+
   .site-list__link {
     font-size: 24px;
     margin-right: 0;

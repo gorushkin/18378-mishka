@@ -1,7 +1,7 @@
 .page-footer {
   background-color: #f1f1f1;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
 }
 
 .page-footer__wrapper {
@@ -20,11 +20,28 @@
     width: 668px;
     justify-content: space-between;
     font-display: row;
+    // box-shadow: 0 0 0 3px red;
+    padding-top: 52px;
+    padding-bottom: 54px;
   }
 
   .page-footer__logo {
     display: block;
     width: 210px;
+    // box-shadow: 0 0 0 3px red;
+  }
+
+  .page-footer__social {
+    // box-shadow: 0 0 0 3px red;
+  }
+
+  .page-footer__logo-image {
+    width: 120px;
+    height: 34px;
+  }
+
+  .page-footer__copyright {
+    // box-shadow: 0 0 0 3px red;
   }
 }
 

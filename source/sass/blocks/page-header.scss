@@ -6,9 +6,9 @@
 
 .page-header__logo {
   display: block;
-  box-sizing: border-box;
   text-align: center;
   order: 0;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }
 
 .page-header__main-nav {
@@ -24,7 +24,11 @@
 }
 
 .page-header__logo-image {
-  margin: 22px 0;
+  margin: 20px 0;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .page-header__note {
@@ -42,7 +46,6 @@
 
   .page-header__user-list {
     order: 1;
-    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__main-nav {
@@ -52,24 +55,28 @@
   .page-header__note {
     @include font-config(15px, normal, 24px, #444444);
     display: block;
-    width: 250px;
     order: 3;
     margin: 0;
-    // box-shadow: 0 0 0 3px red;
+    margin-top: 12px;
   }
 
   .page-header__logo {
     width: 150px;
     display: inline-block;
     flex-grow: 1;
+    box-shadow: none;
   }
 
   .page-header__logo-image {
     display: block;
     width: 112px;
     height: 46px;
-    margin: 21px 0;
+    margin: 22px 0 26px 0;
     margin-right: auto;
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 

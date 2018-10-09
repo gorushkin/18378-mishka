@@ -4,9 +4,7 @@
 
 .promo__wrapper {
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center top;
-  // background-size: cover;
-  padding-top: 76px;
-  // box-shadow: 0 0 0 3px blue;
+  padding-top: 68px;
 }
 
 .promo__title {
@@ -14,7 +12,7 @@
   margin: 0 auto;
   text-align: center;
   width: 260px;
-  margin-bottom: 140px;
+  margin-bottom: 124px;
 }
 
 .promo__list {
@@ -27,10 +25,7 @@
   @include pad-left-right;
   @include font-config(19px, bold, 24px, #ffffff);
   display: block;
-  padding-top: 28px;
-  padding-bottom: 27px;
   background-color: transparent;
-  // box-shadow: 0 0 0 3px red;
 
   &--things {
     background-color: #63d1bb;
@@ -50,23 +45,26 @@
   @include font-config(19px, bold, 24px, #ffffff);
   display: block;
   width: 120px;
+  padding-top: 26px;
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    margin-top: -30px;
+    margin-top: -42px;
+    margin-bottom: 47px;
   }
 
   .promo__wrapper {
     background: url("../../img/hero-tablet@1x.jpg") no-repeat center top;
     background-size: cover;
-    padding-top: 76px;
+    padding-top: 154px;
   }
 
   .promo__title {
     @include font-config(43px, bold, 50px);
     width: 500px;
-    margin-bottom: 371px;
+    margin-bottom: 372px;
   }
 
   .promo__list {
@@ -74,6 +72,11 @@
     flex-direction: row;
     margin: 0 auto;
     width: 668px;
+  }
+
+  .promo__catalog-title {
+    @include font-config(20px, bold, 30px, #ffffff);
+    padding-top: 28px;
   }
 
   .promo__link {

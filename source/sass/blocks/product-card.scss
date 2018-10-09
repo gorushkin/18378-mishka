@@ -8,54 +8,64 @@
   @include pad-left-right;
   margin: 0 auto;
   width: 320px;
-  padding-top: 4px;
+  padding-top: 3px;
   display: flex;
   flex-direction: column;
 }
 
 .product-card__title {
   @include font-config(25px, bold, 30px);
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .product-card__feature {
   @include font-config(17px, bold, 20px, #63d1bb);
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 21px;
+  text-transform: uppercase;
 }
 
 .product-card__description {
   @include font-config(15px, normal, 24px, #444444);
-  margin-bottom: 34px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .product-card__properties {
   @include font-config(15px, normal, 35px, #444444);
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   tr {
-    border-bottom: 1px solid #ececec;
+    box-shadow: 0 1px 0 0 #ececec;
   }
 }
 
 .product-card__field {
-  width: 87px;
+  width: 96px;
+  padding: 2px 0;
 }
 
 .product-card__image {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .product-card__price {
   @include font-config(17px, bold, 24px, #444444);
   display: block;
   text-align: center;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
+  .product-card {
+    background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+    background-size: 750px 30px;
+    padding-bottom: 75px;
+  }
+
   .product-card__wrapper {
     width: 668px;
     flex-direction: row;
@@ -65,14 +75,43 @@
   }
 
   .product-title-wrapper {
-    box-shadow: 0 0 0 3px red;
     width: 668px;
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
+
+  .product-card__title {
+    @include font-config(43px, bold, 50px);
+    margin: 0;
+  }
+
+  .product-card__feature {
+    @include font-config(17px, bold, 17px, #63d1bb);
+    margin: 0;
+    margin-top: 11px;
+    width: 125px;
+    text-align: center;
   }
 
   .product-card__info-wrapper {
-    // box-shadow: 0 0 0 3px red;
     width: 334px;
+    // margin-top: 50px;
+  }
+
+  .product-card__description {
+    @include font-config(17px, normal, 30px, #444444);
+    margin-top: -8px;
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  .product-card__properties {
+    width: 291px;
+  }
+
+  .product-card__field {
+    padding: 2px 0 3px 0;
   }
 
   .product-card__image {
@@ -83,9 +122,13 @@
   }
 
   .product-card__button-wrapper {
-    // box-shadow: 0 0 0 3px red;
-    width: 334px;
-    margin-top: -100px;
+    width: 292px;
+    margin-top: -110px;
+  }
+
+  .product-card__price {
+    @include font-config(20px, bold, 24px, #444444);
+    margin-bottom: 35px;
   }
 }
 
