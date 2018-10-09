@@ -12,7 +12,7 @@
   width: 260px;
   // margin: 0 auto;
   margin-bottom: 25px;
-  box-shadow: 0 0 0 3px red;
+  // box-shadow: 0 0 0 3px red;
 }
 
 .contacts__info {
@@ -101,15 +101,26 @@
     width: 1050px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
   }
 
   .contacts__wrapper {
     width: 524px;
-    box-shadow: 0 0 0 3px red;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .contacts__map-wrapper {
     width: 524px;
-    box-shadow: 0 0 0 3px red;
+    // box-shadow: 0 0 0 3px red;
+    margin: 0;
+  }
+
+  .contacts__button-wrapper {
+    width: 524px;
+    // box-shadow: 0 0 0 3px red;
+    margin: 0;
+    margin-top: -50px;
+    height: 50px;
   }
 }
