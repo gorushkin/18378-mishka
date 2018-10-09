@@ -2,6 +2,7 @@
   @include listreset;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .select-size__item {
@@ -14,6 +15,10 @@
   display: block;
   cursor: pointer;
   border: solid 2px #63d1bb;
+
+  .select-size__input:checked + & {
+    background: #63d1bb;
+  }
 }
 
 .select-size__add {
@@ -22,4 +27,22 @@
   border: solid 2px #63d1bb;
   cursor: pointer;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .select-size__list {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .select-size__item {
+    flex-basis: 112px;
+  }
+
+  .select-size__add {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
 }
