@@ -144,10 +144,10 @@
 
   .order-form__item--contacts {
     display: flex;
-    box-shadow: 0 0 0 3px red;
+    // box-shadow: 0 0 0 3px red;
     flex-direction: row;
     align-items: baseline;
-    // flex-wrap: nowrap;
+    margin: 0 auto;
   }
 
   .order-form__button-wrapper {

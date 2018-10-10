@@ -7,7 +7,12 @@
   margin-bottom: 30px;
 }
 
-.order-page__wrapper {
+// .order-page__wrapper {
+//   width: 260px;
+//   margin: 0 auto;
+// }
+
+.container {
   width: 260px;
   margin: 0 auto;
 }
@@ -17,13 +22,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order-page__wrapper {
+  // .order-page__wrapper {
+  //   // width: auto;
+  // }
+
+  .container {
     width: $tablet-width;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order-page__wrapper {
+  .container {
     width: $desktop-width;
+    margin: 0 auto;
   }
 }
+//
