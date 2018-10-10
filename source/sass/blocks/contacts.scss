@@ -29,6 +29,10 @@
   &--value {
     width: 183px;
   }
+
+  &--email {
+    box-shadow: 0 1px 0 0 #62d1ba;
+  }
 }
 
 .contacts__map-wrapper {
@@ -57,6 +61,17 @@
   .contacts__title {
     @include font-config(43px, bold, 50px);
     margin-bottom: 49px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      right: -405px;
+      top: -15px;
+      background: url("../../img/icon-flag.svg") no-repeat center;
+    }
   }
 
   .contacts__wrapper {
@@ -74,7 +89,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
-    // box-shadow: 0 0 0 3px red;
   }
 
   .contacts__text {
