@@ -35,7 +35,7 @@
   @include font-config(15px, normal, 35px, #444444);
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 30px;
+
 
   tr {
     box-shadow: 0 1px 0 0 #ececec;
@@ -49,7 +49,7 @@
 
 .product-card__image {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 
 .product-card__price {
@@ -57,6 +57,16 @@
   display: block;
   text-align: center;
   margin-bottom: 25px;
+}
+
+@media (max-width: $tablet-width) {
+  .product-card__properties {
+    margin-bottom: 380px;
+  }
+
+  .product-card__image {
+    margin-top: -450px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -86,6 +96,11 @@
     margin: 0;
   }
 
+  .columns-wrapper {
+    // box-shadow: 0 0 0 3px red;
+    display: flex;
+  }
+
   .product-card__feature {
     @include font-config(17px, bold, 17px, #63d1bb);
     margin: 0;
@@ -96,7 +111,10 @@
 
   .product-card__info-wrapper {
     width: 334px;
-    // margin-top: 50px;
+    margin-top: 50px;
+    // box-shadow: 0 0 0 3px blue;
+    display: flex;
+    flex-direction: column;
   }
 
   .product-card__description {
@@ -108,6 +126,7 @@
 
   .product-card__properties {
     width: 291px;
+    // margin-bottom: 45px;
   }
 
   .product-card__field {
@@ -115,7 +134,7 @@
   }
 
   .product-card__image {
-    box-shadow: 0 0 0 3px red;
+    background: green;
     width: 334px;
     height: 404px;
     margin: 0;
@@ -123,7 +142,8 @@
 
   .product-card__button-wrapper {
     width: 292px;
-    margin-top: -110px;
+    // box-shadow: 0 0 0 3px red;
+    margin-top: auto;
   }
 
   .product-card__price {
@@ -142,30 +162,33 @@
   }
 
   .product-title-wrapper {
-    box-shadow: 0 0 0 3px red;
-    width: 525px;
+    // box-shadow: 0 0 0 3px red;
+    width: 700px;
     display: flex;
-    order: 0;
+    z-index: 5;
   }
 
-  .product-card__info-wrapper {
-    // box-shadow: 0 0 0 3px red;
-    width: 525px;
+  .product-card__title {
+    width: auto;
     order: 2;
   }
 
+  .columns-wrapper {
+    margin-left: 175px;
+    margin-top: -100px;
+  }
+
+  .product-card__info-wrapper {
+    width: 350px;
+  }
+
   .product-card__image {
-    box-shadow: 0 0 0 3px red;
     width: 525px;
     height: 636px;
     margin: 0;
-    order: 1;
   }
 
   .product-card__button-wrapper {
-    // box-shadow: 0 0 0 3px red;
-    width: 525px;
-    order: 3;
-    // margin-top: -100px;
+    // width: 525px;
   }
 }
