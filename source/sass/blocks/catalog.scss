@@ -8,11 +8,30 @@
 }
 
 .catalog__wrapper {
-  @include pad-left-right;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
 }
 
 .catalog-list {
   @include listreset;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: 668px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1050px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

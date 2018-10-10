@@ -89,13 +89,13 @@
   .promo__wrapper {
     background: url("../../img/hero-desktop@1x.jpg") no-repeat center top;
     // background-size: cover;
-    padding-top: 76px;
+    padding-top: 152px;
   }
 
   .promo__title {
     @include font-config(53px, bold, 57px);
     width: 620px;
-    margin-bottom: 371px;
+    margin-bottom: 360px;
   }
 
   .promo__list {
@@ -107,6 +107,7 @@
 
   .promo__link {
     flex-grow: 1;
+    padding-left: 35px;
   }
 
   .promo__title-wrapper {
