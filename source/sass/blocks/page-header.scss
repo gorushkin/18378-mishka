@@ -31,6 +31,10 @@
   &--tablet {
     display: none;
   }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-header__note {
@@ -79,6 +83,10 @@
     &--mobile {
       display: none;
     }
+
+    &--desktop {
+      display: none;
+    }
   }
 }
 
@@ -90,20 +98,17 @@
   .page-header__main-nav {
     order: 0;
     width: 450px;
-    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__logo {
     order: 1;
     width: 149px;
     flex-grow: 0;
-    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__user-list {
     width: 451px;
     order: 2;
-    // box-shadow: 0 0 0 3px red;
   }
 
   .page-header__hot-list {
@@ -114,11 +119,24 @@
   .page-header__note {
     order: 4;
     text-align: right;
+    padding-top: 5px;
   }
 
   .page-header__logo-image {
     width: 149px;
     height: 72px;
     margin: 8px 0;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
