@@ -5,7 +5,18 @@
   align-items: center;
   text-transform: uppercase;
 
-  &::after {
+  // &::after {
+  //   content: "";
+  //   width: 100%;
+  //   height: 1px;
+  //   background: #63d1bb;
+  //   display: block;
+  //   margin-left: 25px;
+  // }
+}
+
+@media (max-width: $tablet-width) {
+  .order-form__title::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -92,4 +103,63 @@
 
 .order-form__send-order {
   margin-bottom: 45px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .order-form__set--grey {
+    background: #f1f1f1;
+  }
+
+  .order-form__set {
+    // box-shadow: 0 0 0 3px red;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .order-form__title {
+    width: 170px;
+    flex-shrink: 0;
+  }
+
+  .order-form__list {
+    // box-shadow: 0 0 0 3px red;
+    flex-grow: 1;
+
+    &--color-select {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-form__item--color-select {
+    width: 230px;
+  }
+
+  .order-form__item--name {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .order-form__item--contacts {
+    display: flex;
+    box-shadow: 0 0 0 3px red;
+    flex-direction: row;
+    align-items: baseline;
+    // flex-wrap: nowrap;
+  }
+
+  .order-form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__send-order {
+    order: 0;
+  }
+
+  .order-form_sub-text {
+    order: 1;
+  }
 }

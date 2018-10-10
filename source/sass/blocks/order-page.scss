@@ -8,12 +8,22 @@
 }
 
 .order-page__wrapper {
-  @include pad-left-right;
-  width: 320px;
+  width: 260px;
   margin: 0 auto;
-  // box-shadow: 0 0 0 3px red;
 }
 
 .order-page__text {
   @include font-config(13px, normal, 24px, #444444);
+}
+
+@media (min-width: $tablet-width) {
+  .order-page__wrapper {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-page__wrapper {
+    width: $desktop-width;
+  }
 }
