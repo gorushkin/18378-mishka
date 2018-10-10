@@ -7,11 +7,6 @@
   margin-bottom: 30px;
 }
 
-// .order-page__wrapper {
-//   width: 260px;
-//   margin: 0 auto;
-// }
-
 .container {
   width: 260px;
   margin: 0 auto;
@@ -22,10 +17,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  // .order-page__wrapper {
-  //   // width: auto;
-  // }
-
   .container {
     width: $tablet-width;
     margin: 0 auto;
@@ -38,4 +29,3 @@
     margin: 0 auto;
   }
 }
-//
