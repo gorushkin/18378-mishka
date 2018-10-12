@@ -72,7 +72,6 @@
   }
 
   .making-info__title {
-    // order: 1;
     margin: 0;
   }
 
@@ -84,15 +83,16 @@
 @media (min-width: $desktop-width) {
   .making-info {
     width: 1050px;
-    height: 455px;
+    // height: 455px;
   }
 
   .making-info__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 1050px;
-    height: 455px;
+    // height: 455px;
     box-shadow: 0 0 0 3px blue;
   }
 
@@ -100,11 +100,10 @@
     width: 600px;
     height: 455px;
     order: 0;
-    // flex-shrink: 0;
   }
 
   .making-info__title {
-    order: 1;
+    // order: 1;
     width: 200px;
     box-shadow: 0 0 0 3px red;
   }
