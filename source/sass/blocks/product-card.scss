@@ -162,9 +162,12 @@
   }
 
   .product-title-wrapper {
-    width: 700px;
-    display: flex;
+    // width: 700px;
+    // display: flex;
     z-index: 5;
+    margin: 0;
+    width: 1050px;
+    position: absolute;
   }
 
   .product-card__title {
@@ -173,12 +176,14 @@
   }
 
   .columns-wrapper {
-    margin-left: 175px;
-    margin-top: -100px;
+    // margin-left: 175px;
+    // margin-top: -100px;
   }
 
   .product-card__info-wrapper {
     width: 350px;
+    box-shadow: 0 0 0 3px red;
+    margin-left: 175px;
   }
 
   .product-card__image {
