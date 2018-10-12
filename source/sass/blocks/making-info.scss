@@ -7,12 +7,14 @@
 
 .making-info__wrapper {
   border: 1px solid #ededed;
+  position: relative;
 }
 
 .making-info__title {
   @include font-config(17px, bold, 24px);
   margin-left: 91px;
   position: relative;
+  margin-bottom: 190px;
 
   &::before {
     position: absolute;
@@ -33,6 +35,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+  position: absolute;
+  top: 80px;
 }
 
 .making-info__text {
