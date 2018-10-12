@@ -68,14 +68,16 @@
     height: 455px;
     box-shadow: 0 0 0 3px red;
     order: 0;
+    position: static;
   }
 
   .making-info__title {
-    order: 1;
+    // order: 1;
+    margin: 0;
   }
 
-  .making-info__text {
-    order: 1;
+  .making-info__text-wrapper {
+    order: 2;
   }
 }
 
