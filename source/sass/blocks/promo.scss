@@ -22,9 +22,12 @@
 }
 
 .promo__link {
-  @include pad-left-right;
   @include font-config(19px, bold, 24px, #ffffff);
-  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   // padding-top: 26px;
   // padding-bottom: 29px;
   background-color: transparent;
@@ -49,6 +52,12 @@
   width: 120px;
   padding-top: 26px;
   padding-bottom: 29px;
+}
+
+.svg {
+  width: 40px;
+  height: 62px;
+  background: red;
 }
 
 @media (min-width: $tablet-width) {
