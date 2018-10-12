@@ -1,15 +1,142 @@
 .page-header {
   margin: 0 auto;
-  width: 320px;
-  // @include pad-left-right;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__logo {
   display: block;
-  box-sizing: border-box;
   text-align: center;
+  order: 0;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+}
+
+.page-header__main-nav {
+  order: 1;
+}
+
+.page-header__user-list {
+  order: 2;
+}
+
+.page-header__hot-list {
+  display: none;
 }
 
 .page-header__logo-image {
-  margin: 22px 0;
+  margin: 20px 0;
+  margin-top: 22px;
+  margin-bottom: 18px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.page-header__note {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__user-list {
+    order: 1;
+  }
+
+  .page-header__main-nav {
+    order: 2;
+  }
+
+  .page-header__note {
+    @include font-config(15px, normal, 24px, #444444);
+    display: block;
+    order: 3;
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .page-header__logo {
+    width: 150px;
+    display: inline-block;
+    flex-grow: 1;
+    box-shadow: none;
+  }
+
+  .page-header__logo-image {
+    display: block;
+    width: 112px;
+    height: 46px;
+    margin: 22px 0 26px 0;
+    margin-right: auto;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+  }
+
+  .page-header__main-nav {
+    order: 0;
+    width: 450px;
+  }
+
+  .page-header__logo {
+    order: 1;
+    width: 149px;
+    flex-grow: 0;
+  }
+
+  .page-header__user-list {
+    width: 451px;
+    order: 2;
+  }
+
+  .page-header__hot-list {
+    display: block;
+    order: 3;
+  }
+
+  .page-header__note {
+    order: 4;
+    text-align: right;
+    padding-top: 5px;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
+    margin: 8px 0;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }

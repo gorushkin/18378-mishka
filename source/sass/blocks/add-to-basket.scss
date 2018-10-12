@@ -1,18 +1,54 @@
 .add-to-basket {
-  @include pad-left-right;
+  // @include pad-left-right;
   border: solid 1px #c6c6c6;
-  width: 320px;
+  // width: 320px;
   margin: 0 auto;
+  margin-bottom: 100px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .add-to-basket__title {
-  @include font-config(25px, bold, 1.2);
+  @include font-config(25px, bold, 30px);
   text-align: center;
   text-transform: uppercase;
+  width: 150px;
+  margin: 30px auto 12px auto;
 }
 
 .add-to-basket__text {
-  @include font-config(15px, normal, 2, #444444);
+  @include font-config(15px, normal, 30px, #444444);
   text-align: center;
   display: block;
+  margin-bottom: 23px;
+}
+
+.add-to-basket__form {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.select-size__add {
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-to-basket {
+    width: 566px;
+    padding-top: 4px;
+  }
+
+  .add-to-basket__title {
+    @include font-config(30px, bold, 57px);
+    margin-bottom: 13px;
+    width: auto;
+  }
+
+  .add-to-basket__text {
+    @include font-config(17px, normal, 30px, #444444);
+    margin-bottom: 21px;
+  }
+
+  .add-to-basket__form {
+    width: auto;
+  }
 }

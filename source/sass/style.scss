@@ -1,4 +1,4 @@
-// @import "normalize.scss";
+@import "normalize.scss";
 @import "blocks/visually-hidden.scss";
 @import "fonts.scss";
 @import "variables.scss";
@@ -22,3 +22,6 @@
 @import "blocks/order-page.scss";
 @import "blocks/order-form.scss";
 @import "blocks/user-list.scss";
+@import "blocks/social.scss";
+@import "blocks/hot-list.scss";
+@import "blocks/site-list.scss";

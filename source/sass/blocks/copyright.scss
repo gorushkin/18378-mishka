@@ -1,7 +1,39 @@
 .copyright {
-  box-shadow: 0 0 0 3px red;
+  width: 185px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  padding-top: 14px;
 }
 
 .copyright__text {
   @include font-config(19px, bold, 18px);
+  display: inline-block;
+}
+
+.copyright__logo {
+  padding-top: 10px;
+}
+
+.copyright__logo-image {
+  width: 27px;
+  height: 34px;
+  // box-shadow: 0 0 0 3px red;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+    width: 210px;
+    justify-content: flex-end;
+  }
+
+  .copyright__logo {
+    padding: 0;
+    margin-left: 30px;
+  }
 }

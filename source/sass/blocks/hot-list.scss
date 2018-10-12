@@ -1,0 +1,16 @@
+@media (min-width: $desktop-width) {
+  .hot-list {
+    @include listreset;
+    display: flex;
+  }
+}
+
+.hot-list__link {
+  @include font-config(15px, bold, 24px);
+  margin-right: 60px;
+}
+
+.hot-list__item {
+  // box-shadow: 0 0 0 3px red;
+  padding-top: 18px;
+}

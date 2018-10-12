@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background: $bg-color;
+
+  background-color: $bg-color;
 }
 
 * {
@@ -12,3 +13,21 @@ body {
 a {
   text-decoration: none;
 }
+
+
+// body {
+//   background: url("../../img/pp/mishka-index-mobile.jpg") 50% 0 no-repeat;
+//   opacity: 0.5;
+// }
+
+// @media (min-width: $tablet-width) {
+//   body {
+//     background: url("../../img/pp/mishka-index-tablet.jpg") 50% 0 no-repeat;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   body {
+//     background: url("../../img/pp/mishka-index-desktop.jpg") 50% 0 no-repeat;
+//   }
+// }
