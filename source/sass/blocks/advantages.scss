@@ -58,7 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .advantages__wrapper {
@@ -69,24 +69,27 @@
   .advantages__title {
     @include font-config(43px, bold, 50px);
     margin-bottom: 55px;
-  }
-
-  .advantages__text {
-    @include font-config(20px, bold, 21px);
-    width: 295px;
+    margin-left: -5px;
   }
 
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 0 0 3px blue;
   }
 
   .advantages__item {
-    width: 334px;
+    width: 300px;
     padding-top: 50px;
     margin-bottom: 62px;
+    margin-right: 34px;
   }
 
+  .advantages__text {
+    @include font-config(20px, bold, 21px);
+    width: 295px;
+    // box-shadow: 0 0 0 3px red;
+  }
 
   .advantages__item--flower {
     order: 0;
