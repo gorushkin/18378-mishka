@@ -2,9 +2,10 @@
   @include font-config(27px, bold, 30px);
   background-color: #f1f1f1;
   text-align: center;
-  padding: 75px 0;
+  padding: 71px 0 76px 0;
   margin: 0;
   margin-bottom: 30px;
+  // box-shadow: 0 0 0 3px red;
 }
 
 .catalog__wrapper {
@@ -14,8 +15,12 @@
 
 .catalog-list {
   @include listreset;
+  margin-bottom: 31px;
 }
 
+.catalog__item {
+  margin-bottom: 30px;
+}
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {

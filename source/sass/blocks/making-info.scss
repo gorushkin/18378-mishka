@@ -1,5 +1,4 @@
 .making-info {
-  // @include pad-left-right;
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
@@ -11,8 +10,10 @@
 
 .making-info__title {
   @include font-config(17px, bold, 24px);
-  margin-left: 91px;
+  // margin-left: 88px;
   position: relative;
+  // margin: 0
+  padding: 11px 0 8px 88px;
 
   &::before {
     position: absolute;
@@ -20,8 +21,8 @@
     width: 32px;
     height: 32px;
     background: url("../../img/icon-video.svg") no-repeat center;
-    top: 10px;
-    left: -65px;
+    top: 14px;
+    left: 33px;
   }
 }
 
@@ -32,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
 }
 
 .making-info__text {
@@ -41,7 +42,8 @@
 }
 
 .making-info__description {
-  @include font-config(13px, normal, 22px, #444444);
+  @include font-config(13px, normal, 24px, #444444);
+  margin-bottom: 25px;
 }
 
 .making-info__to-order {
