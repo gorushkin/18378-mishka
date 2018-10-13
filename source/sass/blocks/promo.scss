@@ -123,11 +123,16 @@
   .promo {
     margin-top: -42px;
     background: #f9f9f9;
+
+    &::after {
+      height: 34px;
+      background-size: 1250px;
+      bottom: -5px;
+    }
   }
 
   .promo__wrapper {
     background: url("../../img/hero-desktop@1x.jpg") no-repeat center top;
-    // background-size: cover;
     padding-top: 152px;
   }
 
