@@ -120,6 +120,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    margin-top: -42px;
+    background: #f9f9f9;
+  }
+
   .promo__wrapper {
     background: url("../../img/hero-desktop@1x.jpg") no-repeat center top;
     // background-size: cover;
