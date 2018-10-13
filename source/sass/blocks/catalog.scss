@@ -23,9 +23,40 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: -42px;
+  }
+
   .catalog__wrapper {
     width: 668px;
-    margin-bottom: 80px;
+    margin-bottom: 51px;
+  }
+
+  .catalog__title {
+    @include font-config(43px, bold, 57px);
+    padding: 90px 0 90px 0;
+    position: relative;
+    // box-shadow: 0 0 0 3px red;
+    margin-bottom: 67px;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 22px;
+      background: url("../../img/bg-zigzag-fill.svg");
+      // background: red;
+      background-size: 770px;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+
+  .catalog__item {
+    margin-bottom: 54px;
   }
 }
 

@@ -58,22 +58,42 @@
   .making-info__wrapper {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .making-info__video-frame {
     width: 668px;
     height: 455px;
-    box-shadow: 0 0 0 3px red;
+    // box-shadow: 0 0 0 3px red;
     order: 0;
+    margin-bottom: 10px;
   }
 
   .making-info__title {
+    @include font-config(20px, bold, 24px);
     order: 1;
+    margin-left: 16px;
+    margin-bottom: 22px;
+
+    &::before {
+      top: 4px;
+      left: 26px;
+    }
   }
 
   .making-info__text {
     order: 1;
+    padding: 0;
+    width: 585px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+
+  .making-info__description {
+    @include font-config(15px, normal, 30px, #444444);
+    margin: 0;
+    margin-bottom: 35px;
   }
 }
 

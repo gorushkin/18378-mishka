@@ -1,7 +1,3 @@
-.product {
-  border: 1px solid #ededed;
-}
-
 .product__wrapper {
   padding: 0 27px;
   position: relative;
@@ -24,16 +20,6 @@
   display: block;
   position: relative;
   margin-bottom: 40px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 204px;
-    height: 1px;
-    background: #ececec;
-    top: 50px;
-    left: 0;
-  }
 }
 
 .product__price {
@@ -44,7 +30,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
+  position: relative;
   // box-shadow: 0 0 0 3px red;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 204px;
+    height: 1px;
+    background: #ececec;
+    top: -21px;
+    left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,23 +49,57 @@
     // box-shadow: 0 0 0 3px blue;
     display: flex;
     flex-direction: row;
-    margin-bottom: 0;
+    // margin-bottom: 0;
+    // box-sizing: border-box;
   }
 
-  .product__image {
+  .product__image img {
     width: 334px;
     height: 334px;
-    box-shadow: 0 0 0 3px red;
+    margin: 0;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .product__wrapper {
     width: 334px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 7px;
+    padding-right: 30px;
+    border: 1px solid #ededed;
+  }
+
+  .product__title {
+    @include font-config(20px, bold, 24px);
+    width: 220px;
+    margin-bottom: 6px;
+  }
+
+  .product__specs {
+    @include font-config(15px, normal, 30px, #444444);
   }
 
   .product__order-wrapper {
     margin-top: auto;
+    padding-left: 6px;
+    // padding-right: 30px;
+    margin-bottom: 0;
+
+    padding-bottom: 25px;
+    // box-shadow: 0 0 0 3px red;
+
+    &::before {
+      width: 100%;
+      top: -24px;
+      left: 0;
+    }
+  }
+
+  .product__price {
+    @include font-config(17px, bold, 24px, #444444);
   }
 }
 
@@ -81,6 +112,10 @@
 
   .product__image {
     width: 316px;
+  }
+
+  .product__title {
+    @include font-config(17px, bold, 24px);
   }
 
   .product__wrapper {
