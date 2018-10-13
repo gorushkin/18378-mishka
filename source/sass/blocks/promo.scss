@@ -4,7 +4,7 @@
 
 .promo__wrapper {
   background: url("../../img/hero-mobile@1x.jpg") no-repeat center top;
-  padding-top: 68px;
+  padding-top: 88px;
 }
 
 .promo__title {
@@ -75,9 +75,25 @@
   .promo {
     margin-top: -42px;
     margin-bottom: 47px;
+    position: relative;
+    // box-shadow: 0 0 0 3px red;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 22px;
+      background: url("../../img/bg-zigzag-fill.svg");
+      background-size: 770px;
+      bottom: 0;
+      z-index: 10;
+    }
   }
 
   .promo__wrapper {
+    // background: url("../../img/bg-zigzag-fill.svg") repeat-x 0 bottom,
+    //     url("../../img/hero-tablet@1x.jpg") no-repeat center top;
+    // background-size: 770px, cover;
     background: url("../../img/hero-tablet@1x.jpg") no-repeat center top;
     background-size: cover;
     padding-top: 154px;
@@ -107,19 +123,13 @@
     width: 50%;
     padding-left: 35px;
     padding-right: 35px;
-    background-image: url("../../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-size: 770px;
-    background-position-y: 109px;
-    background-position-x: 27px;
-
-
-    &--toys {
-      background-position-x: 0;
-    }
+    // background-image: url("../../img/bg-zigzag-fill.svg");
+    // background-repeat: repeat-x;
+    // background-size: 770px;
+    // background-position-y: 109px;
+    // background-position-x: 27px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
