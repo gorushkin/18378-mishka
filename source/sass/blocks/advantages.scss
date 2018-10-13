@@ -58,7 +58,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .advantages__wrapper {
@@ -117,6 +117,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 27px;
+  }
+
   .advantages__wrapper {
     width: 700px;
   }

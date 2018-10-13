@@ -122,12 +122,30 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    margin-bottom: 50px;
+    margin-bottom: 107px;
+    padding-left: 175px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .contacts__wrapper {
-    width: 524px;
+    width: 350px;
     // box-shadow: 0 0 0 3px red;
+    padding-top: 27px;
+    // padding-left: 175px;
+  }
+
+  .contacts__title {
+    @include font-config(53px, bold, 57px);
+
+    &::after {
+
+      right: 321px;
+      top: -8px;
+    }
+  }
+
+  .contacts__info {
+    flex-direction: column;
   }
 
   .contacts__map-wrapper {
@@ -142,5 +160,9 @@
     margin: 0;
     margin-top: -50px;
     height: 50px;
+  }
+
+  .contacts__write-to {
+    margin: 0;
   }
 }
