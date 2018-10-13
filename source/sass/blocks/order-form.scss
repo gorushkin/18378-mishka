@@ -1,10 +1,4 @@
-.order-form {
-  // box-shadow: 0 0 0 3px red;
-  // padding-top: 11px;
-}
-
 .order-form__set {
-  // box-shadow: 0 0 0 3px blue;
   padding-top: 11px;
   margin-bottom: 22px;
 
@@ -131,8 +125,6 @@
     @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
   }
 }
-
-
 
 .order-form_sub-text {
   @include font-config(14px, normal, 16px, #444444);
