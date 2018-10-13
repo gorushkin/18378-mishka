@@ -28,12 +28,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // padding-top: 26px;
-  // padding-bottom: 29px;
-  background-color: transparent;
 
   &--things {
     background-color: #63d1bb;
+    padding-right: 33px;
   }
 
   &--toys {
@@ -54,10 +52,20 @@
   padding-bottom: 29px;
 }
 
-.svg {
-  width: 40px;
-  height: 62px;
-  background: red;
+.promo__catalog-icon {
+  &--things {
+    width: 40px;
+    height: auto;
+  }
+
+  &--toys {
+    width: 60px;
+    height: auto;
+  }
+
+  path {
+    fill: rgba(20, 144, 128, 0.5);
+  }
 }
 
 @media (min-width: $tablet-width) {
