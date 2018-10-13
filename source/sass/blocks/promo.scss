@@ -50,20 +50,17 @@
   width: 120px;
   padding-top: 26px;
   padding-bottom: 29px;
-  // box-shadow: 0 0 0 3px red;
 }
 
 .promo__catalog-icon {
   &--things {
     width: 40px;
     height: auto;
-    // box-shadow: 0 0 0 3px red;
   }
 
   &--toys {
     width: 60px;
     height: auto;
-    // box-shadow: 0 0 0 3px red;
   }
 
   path {
@@ -74,9 +71,8 @@
 @media (min-width: $tablet-width) {
   .promo {
     margin-top: -42px;
-    margin-bottom: 47px;
+    margin-bottom: 35px;
     position: relative;
-    // box-shadow: 0 0 0 3px red;
 
     &::after {
       position: absolute;
@@ -91,9 +87,6 @@
   }
 
   .promo__wrapper {
-    // background: url("../../img/bg-zigzag-fill.svg") repeat-x 0 bottom,
-    //     url("../../img/hero-tablet@1x.jpg") no-repeat center top;
-    // background-size: 770px, cover;
     background: url("../../img/hero-tablet@1x.jpg") no-repeat center top;
     background-size: cover;
     padding-top: 154px;
@@ -123,11 +116,6 @@
     width: 50%;
     padding-left: 35px;
     padding-right: 35px;
-    // background-image: url("../../img/bg-zigzag-fill.svg");
-    // background-repeat: repeat-x;
-    // background-size: 770px;
-    // background-position-y: 109px;
-    // background-position-x: 27px;
   }
 }
 

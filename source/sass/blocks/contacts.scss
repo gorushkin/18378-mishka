@@ -62,13 +62,14 @@
     @include font-config(43px, bold, 50px);
     margin-bottom: 49px;
     position: relative;
+    margin-left: -5px;
 
     &::after {
       position: absolute;
       content: "";
       width: 47px;
       height: 81px;
-      right: -405px;
+      right: -410px;
       top: -15px;
       background: url("../../img/icon-flag.svg") no-repeat center;
     }
@@ -96,7 +97,7 @@
     width: auto;
 
     &--field {
-      margin-right: 26px;
+      margin-right: 24px;
     }
   }
 
