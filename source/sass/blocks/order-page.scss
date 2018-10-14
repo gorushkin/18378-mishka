@@ -18,9 +18,43 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-page {
+    // border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: -42px;
+  }
+
+  .order-page__title {
+    @include font-config(43px, bold, 50px);
+    padding: 93px 0 95px 0;
+    position: relative;
+    margin-bottom: 60px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 22px;
+      background: url("../../img/bg-zigzag-fill.svg");
+      // background: red;
+      background-size: 770px;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+  }
+
   .container {
     width: $tablet-width;
     margin: 0 auto;
+    // box-shadow: 0 0 0 3px red;
+  }
+
+  .order-page__text {
+    @include font-config(17px, normal, 30px, #444444);
+    width: $tablet-width;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
   }
 }
 

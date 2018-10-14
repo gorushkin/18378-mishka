@@ -143,20 +143,26 @@
   }
 
   .order-form__set {
+    padding-top: 50px;
     // box-shadow: 0 0 0 3px red;
+  }
+
+  .container {
     display: flex;
     align-items: flex-start;
-    // background: red;
     margin: 0 auto;
+    padding: 0;
+    margin-bottom: 25px;
+    box-shadow: 0 0 0 3px green;
   }
 
   .order-form__title {
-    width: 170px;
+    width: 167px;
     flex-shrink: 0;
+    padding: 20px 0;
   }
 
   .order-form__list {
-    // box-shadow: 0 0 0 3px red;
     flex-grow: 1;
 
     &--color-select {
@@ -166,7 +172,38 @@
   }
 
   .order-form__item--color-select {
-    width: 230px;
+    box-shadow: 0 0 0 3px red;
+    margin-right: 30px;
+    width: 200px;
+  }
+
+  .order-form__label {
+    @include font-config(19px, bold, 18px);
+    margin-bottom: 26px;
+    // box-shadow: 0 0 0 3px blue;
+
+    &--button {
+      padding: 16px 0 18px 80px;
+    }
+
+    &--button::before {
+      // position: absolute;
+      // content: "";
+      width: 53px;
+      height: 53px;
+      top: 0;
+      left: 0;
+      border: 2px solid #444444;
+      box-sizing: border-box;
+    }
+
+    &--radio::before {
+      border-radius: 50%;
+    }
+  }
+
+  .order-form__item--color-select {
+    // width: 230px;
   }
 
   .order-form__item--name {
