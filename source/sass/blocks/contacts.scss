@@ -33,6 +33,14 @@
   &--email {
     box-shadow: 0 1px 0 0 #62d1ba;
   }
+
+  &--email:hover {
+    color: #46c1ae;
+  }
+
+  &--email:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map-wrapper {

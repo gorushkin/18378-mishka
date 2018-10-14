@@ -39,6 +39,19 @@
   &--toys {
     background: #56c3b2;
   }
+
+  &:hover span {
+    padding-bottom: 47px;
+  }
+
+
+  &:hover path {
+    fill: rgba(20, 144, 128, 1);
+  }
+
+  &:active path {
+    fill: rgba(20, 144, 128, 0.3);
+  }
 }
 
 .promo__title-wrapper {

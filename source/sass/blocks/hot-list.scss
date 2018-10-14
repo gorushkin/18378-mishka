@@ -8,9 +8,16 @@
 .hot-list__link {
   @include font-config(15px, bold, 24px);
   margin-right: 60px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .hot-list__item {
-  // box-shadow: 0 0 0 3px red;
   padding-top: 18px;
 }

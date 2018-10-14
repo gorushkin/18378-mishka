@@ -8,4 +8,13 @@
   background-color: #ffffff;
   padding: 0;
   width: 100%;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

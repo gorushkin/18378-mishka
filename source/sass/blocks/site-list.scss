@@ -12,6 +12,15 @@
   display: block;
   padding-left: 46px;
   position: relative;
+  // box-shadow: 0 0 0 3px red;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-list {
