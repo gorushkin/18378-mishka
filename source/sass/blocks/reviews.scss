@@ -171,6 +171,7 @@
       background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
       background-size: 1050px 23px;
       bottom: -95px;
+      display: none;
     }
   }
 
@@ -178,10 +179,22 @@
     width: 1050px;
     padding-left: 175px;
     padding-top: 74px;
+    position: relative;
     // box-shadow: 0 0 0 3px red;
-
-
     background: url("../../img/review@1x.jpg") no-repeat left center;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 1050px;
+      height: 23px;
+      background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+      background-size: 1050px 23px;
+      bottom: -95px;
+
+    }
   }
 
   .reviews__title {

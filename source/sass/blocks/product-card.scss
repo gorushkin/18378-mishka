@@ -176,11 +176,12 @@
     &::after {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 1050px;
       height: 23px;
       background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
       background-size: 1050px 23px;
       bottom: -95px;
+      display: none;
     }
   }
 
@@ -189,6 +190,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1050px;
+      height: 23px;
+      background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+      background-size: 1050px 23px;
+      bottom: -95px;
+      left: 0;
+    }
   }
 
   .product-title-wrapper {
