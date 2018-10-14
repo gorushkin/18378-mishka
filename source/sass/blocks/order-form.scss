@@ -77,18 +77,14 @@
     border-radius: 50%;
   }
 
-  &--name {
-    // margin-right: 25px;
-    // margin-bottom: 25px;
-  }
-
   .order-form__input--radio:checked + &--radio::before {
     background: #63d1bb;
     box-shadow: inset 0 0 0 8px #ffffff;
   }
 
   .order-form__input--checkbox:checked + &--checkbox::before {
-    background: url("../../img/icon-tick.svg") no-repeat 8px 13px;
+    background: url("../../img/icon-tick.svg") no-repeat 3px 6px;
+    box-shadow: inset 0 0 0 7px #ffffff;
   }
 }
 
@@ -138,10 +134,12 @@
   margin-bottom: 55px;
 }
 
+// Выше не троооооооооооооооооооооооооооогаааааааааааааааааать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 @media (min-width: $tablet-width) {
   .order-form__set {
     padding-top: 50px;
+    margin-bottom: 25px;
     // box-shadow: 0 0 0 3px red;
 
     &--grey {
@@ -150,6 +148,18 @@
 
     &--name {
       padding-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    &--contacts {
+      padding-top: 47px;
+      padding-bottom: 31px;
+      margin-bottom: 50px;
+    }
+
+    &--wishes {
+      padding-top: 0;
+      margin-bottom: 28px;
     }
   }
 
@@ -158,8 +168,6 @@
     align-items: flex-start;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 25px;
-    // box-shadow: 0 0 0 3px green;
   }
 
   .order-form__title {
@@ -212,37 +220,62 @@
     &--name {
       margin-right: 25px;
     }
+
+    .order-form__input--checkbox:checked + &--checkbox::before {
+      background: url("../../img/icon-tick.svg") no-repeat 8px 13px;
+      box-shadow: none;
+    }
   }
 
-  .order-form__input--info {
-    height: 52px;
-    margin-bottom: 25px;
+  .order-form__input {
+    &--info {
+      height: 52px;
+      margin-bottom: 25px;
+    }
+
+    &--contacts {
+      margin-bottom: 20px;
+      background: transparent;
+    }
+
+    &--wishes {
+      height: 142px;
+    }
   }
 
-  .order-form__item--name {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
+  .order-form__item {
+    &--name {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin: 0 auto;
+    }
   }
 
-  .order-form__item--contacts {
-    display: flex;
-    // box-shadow: 0 0 0 3px red;
-    flex-direction: row;
-    align-items: baseline;
-    margin: 0 auto;
-  }
-
-  .order-form__button-wrapper {
+  .container--button-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .order-form__send-order {
     order: 0;
+    width: 230px;
+    // margin-left: 175px;
+    margin: 0;
   }
 
   .order-form_sub-text {
+    @include font-config(17px, normal, 30px, #444444);
     order: 1;
+    margin: 0;
   }
 }
