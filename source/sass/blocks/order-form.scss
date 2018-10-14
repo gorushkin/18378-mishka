@@ -279,3 +279,72 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .order-form__title {
+    // box-shadow: 0 0 0 3px blue;
+    width: 175px;
+    // text-align: center;
+    padding-left: 62px;
+  }
+
+  .order-form__set {
+    margin-bottom: 21px;
+
+    &--name {
+      padding-top: 29px;
+      margin-bottom: 26px;
+    }
+
+    &--contacts {
+      margin-bottom: 50px;
+    }
+  }
+
+  .order-form__list {
+    flex-grow: 1;
+
+    &--color-select {
+      justify-content: flex-start;
+      margin-bottom: 26px;
+    }
+
+    &--name {
+      width: 700px;
+      margin-right: 175px;
+    }
+
+    &--contacts {
+      width: 700px;
+      margin-right: 175px;
+    }
+  }
+
+  .order-form__item--color-select {
+    margin-right: 63px;
+  }
+
+  .order-form__label {
+    &--name {
+      margin-right: 27px;
+    }
+  }
+
+  .order-form__input {
+    &--info {
+      height: 52px;
+      margin-bottom: 24px;
+    }
+
+    &--wishes {
+      width: 700px;
+      margin-right: 175px;
+      height: 142px;
+      margin-bottom: 27px;
+    }
+  }
+
+  .container--button-wrapper {
+    width: 700px;
+  }
+}
