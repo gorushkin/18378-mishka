@@ -9,6 +9,14 @@
 
 .page-footer__logo {
   display: none;
+
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 
@@ -17,7 +25,6 @@
     display: flex;
     width: 668px;
     justify-content: space-between;
-    // padding-top: 7px;
     height: 143px;
     align-items: center;
   }

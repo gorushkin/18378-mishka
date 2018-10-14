@@ -61,13 +61,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__title {
+    @include font-config(53px, bold, 57px);
+    padding-top: 94px;
+    padding-bottom: 110px;
+    margin-bottom: 122px;
+
+    &::after {
+      height: 22px;
+      background-size: 1150px;
+      z-index: 10;
+    }
+  }
+
   .catalog__wrapper {
     width: 1050px;
+    margin-bottom: 57px;
   }
 
   .catalog-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 0;
   }
 }

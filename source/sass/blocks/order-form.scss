@@ -10,6 +10,11 @@
     margin-bottom: 0;
     padding-top: 14px;
   }
+
+  &--wishes {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .order-form__title {
@@ -73,13 +78,21 @@
     box-sizing: border-box;
   }
 
+  &--button:hover::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &--button:active::before {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
   &--radio::before {
     border-radius: 50%;
   }
 
   .order-form__input--radio:checked + &--radio::before {
     background: #63d1bb;
-    box-shadow: inset 0 0 0 8px #ffffff;
+    box-shadow: inset 0 0 0 10px #ffffff;
   }
 
   .order-form__input--checkbox:checked + &--checkbox::before {
@@ -97,6 +110,11 @@
     height: 52px;
     margin-bottom: 21px;
     width: 100%;
+    @include font-config(17px, normal, 18px, #444444);
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 #62d1ba;
+    }
   }
 
   &--contacts {
@@ -105,6 +123,7 @@
     height: 52px;
     margin-bottom: 33px;
     width: 100%;
+    // @include font-config(17px, normal, 18px, #444444);
   }
 
   &--wishes {
@@ -121,6 +140,38 @@
 
   &--contacts::-webkit-input-placeholder {
     @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
+  }
+
+  &--phone {
+    background-image: url("../../img/icon-phone — default.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 10px;
+    @include font-config(19px, normal, 18px, #444444);
+  }
+
+  &--phone:hover {
+    background-image: url("../../img/icon-phone — hover.svg");
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+
+  &--email {
+    background-image: url("../../img/icon-mail — default.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 10px;
+    @include font-config(17px, normal, 18px, #444444);
+  }
+
+  &--email:hover {
+    background-image: url("../../img/icon-mail — hover.svg");
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+
+  &--phone::-webkit-input-placeholder {
+    @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));    
+  }
+
+  &--wishes:hover {
+    box-shadow: inset 0 -2px 0 #62d1ba, inset 0 2px 0 #62d1ba, inset -2px 0 0 #62d1ba, inset 2px 0 0 #62d1ba;
   }
 }
 
@@ -231,15 +282,40 @@
     &--info {
       height: 52px;
       margin-bottom: 25px;
+      padding-left: 17px;
+      @include font-config(19px, normal, 18px, #444444);
     }
 
     &--contacts {
       margin-bottom: 20px;
-      background: transparent;
+      background-color: transparent;
+      padding-left: 17px;
     }
 
     &--wishes {
       height: 142px;
+    }
+
+    &--phone {
+      background-position: 95% 11px;
+      @include font-config(19px, normal, 18px, #444444);
+    }
+
+    &--email {
+      background-position: 95% 11px;
+      @include font-config(19px, normal, 18px, #444444);
+    }
+
+    &--info::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--contacts::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--phone::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
     }
   }
 
@@ -341,6 +417,18 @@
       margin-right: 175px;
       height: 142px;
       margin-bottom: 27px;
+    }
+
+    &--phone {
+      // background-image: url("../../img/icon-phone — default.svg");
+      // background-repeat: no-repeat;
+      background-position: 99% 11px;
+    }
+
+    &--email {
+      // background-image: url("../../img/icon-mail — default.svg");
+      // background-repeat: no-repeat;
+      background-position: 99% 11px;
     }
   }
 

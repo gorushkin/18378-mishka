@@ -6,6 +6,18 @@
   justify-content: space-between;
   padding-bottom: 17px;
   padding-top: 14px;
+
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -20,7 +32,6 @@
 .copyright__logo-image {
   width: 27px;
   height: 34px;
-  // box-shadow: 0 0 0 3px red;
 }
 
 @media (min-width: $tablet-width) {

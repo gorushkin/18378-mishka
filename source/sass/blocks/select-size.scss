@@ -14,10 +14,14 @@
   text-align: center;
   display: block;
   cursor: pointer;
-  border: solid 2px #63d1bb;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
 
   .select-size__input:checked + & {
-    background: #63d1bb;
+    border: solid 2px #63d1bb;
   }
 }
 

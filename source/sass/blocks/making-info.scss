@@ -6,6 +6,14 @@
 
 .making-info__wrapper {
   border: 1px solid #ededed;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .making-info__title {
@@ -34,6 +42,17 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 27px;
+}
+
+.making-info__play-icon {
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .making-info__text {
@@ -101,6 +120,7 @@
   .making-info {
     width: 1050px;
     height: 455px;
+    margin-bottom: 105px;
   }
 
   .making-info__wrapper {
@@ -109,24 +129,46 @@
     flex-wrap: wrap;
     width: 1050px;
     height: 455px;
-    box-shadow: 0 0 0 3px blue;
   }
 
   .making-info__video-frame {
-    width: 600px;
+    width: 682px;
     height: 455px;
     order: 0;
-    // flex-shrink: 0;
+    background: red;
+    margin: 0;
   }
 
   .making-info__title {
     order: 1;
     width: 200px;
-    box-shadow: 0 0 0 3px red;
+    padding: 0;
+    margin: 0;
+    margin-top: 95px;
+    margin-left: 9px;
+    align-self: flex-start;
+    margin-bottom: 32px;
+
+    &::before {
+      top: -54px;
+      left: 1px;
+    }
   }
 
   .making-info__text {
-    width: 200px;
-    box-shadow: 0 0 0 3px red;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .making-info__description {
+    @include font-config(15px, normal, 30px, #444444);
+    margin-left: 9px;
+    width: 225px;
+    margin-bottom: 47px;
+  }
+
+  .making-info__to-order {
+    margin-left: 10px;
   }
 }
