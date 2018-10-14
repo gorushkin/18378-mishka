@@ -8,6 +8,7 @@
 
   &--contacts {
     margin-bottom: 0;
+    padding-top: 14px;
   }
 }
 
@@ -21,7 +22,7 @@
   margin-bottom: 24px;
 
   &--name {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   &--contacts {
@@ -76,14 +77,18 @@
     border-radius: 50%;
   }
 
+  &--name {
+    // margin-right: 25px;
+    // margin-bottom: 25px;
+  }
+
   .order-form__input--radio:checked + &--radio::before {
     background: #63d1bb;
     box-shadow: inset 0 0 0 8px #ffffff;
   }
 
   .order-form__input--checkbox:checked + &--checkbox::before {
-    background: url("../../img/icon-tick.svg") no-repeat 3px 5px;
-    box-shadow: inset 0 0 0 8px #ffffff;
+    background: url("../../img/icon-tick.svg") no-repeat 8px 13px;
   }
 }
 
@@ -92,24 +97,21 @@
 
   &--info {
     border: none;
-    // border-bottom: 2px solid #000000;
     box-shadow: inset 0 -2px 0 #000000;
-    height: 51px;
-    margin-bottom: 23px;
+    height: 52px;
+    margin-bottom: 21px;
     width: 100%;
   }
 
   &--contacts {
     border: none;
-    // border-bottom: 2px solid #000000;
     box-shadow: inset 0 -2px 0 #000000;
-    height: 51px;
+    height: 52px;
     margin-bottom: 33px;
     width: 100%;
   }
 
   &--wishes {
-    // border: 2px solid #000000;
     border: none;
     box-shadow: inset 0 -2px 0 #000000, inset 0 2px 0 #000000, inset 2px 0 0 #000000, inset -2px 0 0 #000000;
     height: 142px;
@@ -138,13 +140,17 @@
 
 
 @media (min-width: $tablet-width) {
-  .order-form__set--grey {
-    background: #f1f1f1;
-  }
-
   .order-form__set {
     padding-top: 50px;
     // box-shadow: 0 0 0 3px red;
+
+    &--grey {
+      background: #f1f1f1;
+    }
+
+    &--name {
+      padding-top: 24px;
+    }
   }
 
   .container {
@@ -153,7 +159,7 @@
     margin: 0 auto;
     padding: 0;
     margin-bottom: 25px;
-    box-shadow: 0 0 0 3px green;
+    // box-shadow: 0 0 0 3px green;
   }
 
   .order-form__title {
@@ -168,27 +174,29 @@
     &--color-select {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 25px;
     }
   }
 
   .order-form__item--color-select {
-    box-shadow: 0 0 0 3px red;
-    margin-right: 30px;
+    margin-right: 40px;
     width: 200px;
   }
 
   .order-form__label {
     @include font-config(19px, bold, 18px);
     margin-bottom: 26px;
-    // box-shadow: 0 0 0 3px blue;
 
     &--button {
       padding: 16px 0 18px 80px;
     }
 
+    &--checkbox {
+      margin-bottom: 24px;
+    }
+
     &--button::before {
-      // position: absolute;
-      // content: "";
       width: 53px;
       height: 53px;
       top: 0;
@@ -200,10 +208,15 @@
     &--radio::before {
       border-radius: 50%;
     }
+
+    &--name {
+      margin-right: 25px;
+    }
   }
 
-  .order-form__item--color-select {
-    // width: 230px;
+  .order-form__input--info {
+    height: 52px;
+    margin-bottom: 25px;
   }
 
   .order-form__item--name {

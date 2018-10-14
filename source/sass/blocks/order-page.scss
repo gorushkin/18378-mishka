@@ -15,6 +15,10 @@
 
 .order-page__text {
   @include font-config(13px, normal, 24px, #444444);
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
