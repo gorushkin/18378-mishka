@@ -11,4 +11,10 @@ button.addEventListener("click", function (evt) {
   usermenu.classList.toggle("page-header__user-list--show-menu");
 });
 
+var popup = document.querySelector(".add-to-basket");
+var link = document.querySelector(".product-card__to-order");
 
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("add-to-basket--show");
+});
