@@ -18,3 +18,13 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("add-to-basket--show");
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+
+    if (popup.classList.contains("add-to-basket--show")) {
+      popup.classList.remove("add-to-basket--show");
+    }
+  }
+})

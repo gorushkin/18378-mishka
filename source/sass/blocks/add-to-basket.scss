@@ -4,17 +4,15 @@
   margin-bottom: 100px;
   position: fixed;
   top: 50%;
-  // left: 50%;
   background: #ffffff;
   margin-top: -167px;
-  // margin-left: -130px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   width: 100%;
-  // display: none;
+  display: none;
 
-  // &--show {
-  //   display: block;
-  // }
+  &--show {
+    display: block;
+  }
 }
 
 .add-to-basket__title {
@@ -45,6 +43,9 @@
   .add-to-basket {
     width: 566px;
     padding-top: 4px;
+    left: 50%;
+    margin-left: -282px;
+    margin-top: -166px;
   }
 
   .add-to-basket__title {
