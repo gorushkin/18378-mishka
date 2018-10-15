@@ -30,4 +30,3 @@ overlay.addEventListener("click", function (evt) {
     overlay.classList.remove("overlay--show");
   }
 });
-
