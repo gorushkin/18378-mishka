@@ -18,6 +18,8 @@
   position: absolute;
   left: 1px;
   top: 32px;
+  display: inline-block;
+  pointer-events: none;
 }
 
 .user-list__link {
@@ -38,6 +40,10 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active path {
+    fill: rgba(99, 209, 187, 0.3);
   }
 }
 

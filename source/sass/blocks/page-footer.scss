@@ -9,16 +9,7 @@
 
 .page-footer__logo {
   display: none;
-
-  &:hover path {
-    fill: #46c1ae;
-  }
-
-  &:active path {
-    opacity: 0.3;
-  }
 }
-
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
@@ -30,13 +21,22 @@
   }
 
   .page-footer__logo {
-    display: block;
+    display: inline-block;
     width: 210px;
+
+    &:hover path {
+      fill: #46c1ae;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
   }
 
   .page-footer__logo-image {
     width: 120px;
     height: 34px;
+    pointer-events: none;
   }
 }
 

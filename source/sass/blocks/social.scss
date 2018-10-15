@@ -25,6 +25,10 @@
   }
 }
 
+.social__icon {
+  pointer-events: none;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
