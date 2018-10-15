@@ -19,6 +19,11 @@
   cursor: pointer;
   z-index: 5;
   outline: none;
+  display: none;
+
+  &--show {
+    display: block;
+  }
 
   &--close {
     background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;

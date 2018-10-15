@@ -1,4 +1,5 @@
 var button = document.querySelector(".main-nav__toggle");
+button.classList.add("main-nav__toggle--show");
 var sitemenu = document.querySelector(".page-header__main-nav");
 sitemenu.classList.add("page-header__main-nav--close-menu");
 var usermenu = document.querySelector(".page-header__user-list");
