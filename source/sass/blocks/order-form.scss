@@ -138,6 +138,10 @@
     @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
   }
 
+  &--invalid::-webkit-input-placeholder {
+    color: red;
+  }
+
   &--contacts::-webkit-input-placeholder {
     @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
   }
@@ -317,6 +321,10 @@
     &--phone::-webkit-input-placeholder {
       @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
     }
+
+    &--invalid::-webkit-input-placeholder {
+      color: red;
+    }
   }
 
   .order-form__item {
@@ -429,6 +437,10 @@
       // background-image: url("../../img/icon-mail — default.svg");
       // background-repeat: no-repeat;
       background-position: 99% 11px;
+    }
+
+    &--invalid::-webkit-input-placeholder {
+      color: red;
     }
   }
 
