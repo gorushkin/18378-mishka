@@ -48,11 +48,25 @@
   width: 100%;
   overflow: hidden;
   margin-bottom: 38px;
+  position: relative;
+
+  & iframe {
+    z-index: 5;
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
 }
 
 .contacts__map {
   width: 100%;
-  margin-top: -90px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .contacts__write-to {
