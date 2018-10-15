@@ -5,6 +5,7 @@
   padding: 70px 0 76px 0;
   margin: 0;
   margin-bottom: 23px;
+  margin-top: -42px;
 }
 
 .container {
@@ -22,16 +23,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order-page {
-    // border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin-top: -42px;
-  }
+  // .order-page {
+  //   // border-top: 1px solid rgba(0, 0, 0, 0.1)
+  //   // box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  //   // margin-top: -42px;
+  // }
 
   .order-page__title {
     @include font-config(43px, bold, 50px);
     padding: 93px 0 95px 0;
     position: relative;
     margin-bottom: 60px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
 
     &::after {
       position: absolute;
