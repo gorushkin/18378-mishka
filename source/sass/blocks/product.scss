@@ -6,6 +6,8 @@
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+  // box-shadow: 0 0 0 3px red;
+  // margin-bottom: 30px;
 }
 
 .product__wrapper {
@@ -42,6 +44,7 @@
 
 .product__price {
   @include font-config(15px, bold, 24px, #444444);
+  margin-bottom: 30px;
 }
 
 .product__order-wrapper {
@@ -121,6 +124,7 @@
 
   .product__price {
     @include font-config(17px, bold, 24px, #444444);
+    margin-bottom: 0;
   }
 }
 
