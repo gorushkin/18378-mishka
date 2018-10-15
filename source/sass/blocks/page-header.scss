@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-header__logo {
@@ -22,10 +23,26 @@
 .page-header__main-nav {
   order: 1;
   z-index: 5;
+
+  &--close-menu {
+    display: none;
+  }
+
+  &--show-menu {
+    display: block;
+  }
 }
 
 .page-header__user-list {
   order: 2;
+
+  &--close-menu {
+    display: none;
+  }
+
+  &--show-menu {
+    display: block;
+  }
 }
 
 .page-header__hot-list {
@@ -65,10 +82,12 @@
 
   .page-header__user-list {
     order: 1;
+    display: block;
   }
 
   .page-header__main-nav {
     order: 2;
+    display: block;
   }
 
   .page-header__note {

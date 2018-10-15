@@ -25,6 +25,7 @@
 
 .site-list {
   @include listreset;
+  // display: none;
 }
 
 @media (min-width: $tablet-width) {

@@ -10,13 +10,17 @@
   border: none;
   font-size: 0;
   width: 20px;
+  padding: 25px;
   height: 14px;
   background: url("../../img/icon-menu-open.svg") no-repeat 50% 50%;
   position: absolute;
-  top: -50px;
+  top: 15px;
   right: 30px;
+  cursor: pointer;
+  z-index: 5;
+  outline: none;
 
-  &:active {
+  &--close {
     background: url("../../img/icon-menu-close.svg") no-repeat 50% 50%;
   }
 }
