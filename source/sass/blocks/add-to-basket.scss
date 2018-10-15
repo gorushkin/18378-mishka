@@ -1,3 +1,18 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  // z-index: 35;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
 .add-to-basket {
   border: solid 1px #c6c6c6;
   margin: 0 auto;
@@ -8,12 +23,15 @@
   margin-top: -167px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   width: 100%;
+  // z-index: 50;
   display: none;
 
   &--show {
     display: block;
   }
 }
+
+
 
 .add-to-basket__title {
   @include font-config(25px, bold, 30px);
