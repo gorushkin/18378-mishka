@@ -45,6 +45,9 @@
 }
 
 .making-info__play-icon {
+  cursor: pointer;
+  transition: 0.1s;
+
   &:hover {
     transform: scale(1.2);
   }
@@ -79,6 +82,8 @@
     flex-direction: column;
     // flex-wrap: wrap;
     justify-content: flex-start;
+    border: none;
+    box-shadow: inset -1px 0 0 #ededed, inset 1px 0 0 #ededed, inset 0 -1px 0 #ededed;
   }
 
   .making-info__video-frame {
@@ -87,6 +92,8 @@
     // box-shadow: 0 0 0 3px red;
     order: 0;
     margin-bottom: 10px;
+    // border-bottom: 1px solid #ededed;
+    box-shadow: inset -1px 0 0 #ffffff, inset 1px 0 0 #ffffff, inset 0 -1px 0 #ededed;
   }
 
   .making-info__title {
@@ -129,14 +136,17 @@
     flex-wrap: wrap;
     width: 1050px;
     height: 455px;
+    border: 1px solid #ececec;
+    box-shadow: none;
   }
 
   .making-info__video-frame {
     width: 682px;
     height: 455px;
     order: 0;
-    background: red;
+    // background: red;
     margin: 0;
+    box-shadow: none;
   }
 
   .making-info__title {
