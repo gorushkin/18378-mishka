@@ -23,9 +23,12 @@
   .page-footer__logo {
     display: inline-block;
     width: 210px;
+    outline: none;
 
-    &:hover path {
+    &:hover path,
+    &:focus path {
       fill: #46c1ae;
+      outline: none;
     }
 
     &:active path {

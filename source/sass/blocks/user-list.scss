@@ -14,6 +14,10 @@
   }
 }
 
+.user-list__link:focus path {
+  fill: rgba(99, 209, 187, 1);
+}
+
 .user-list__img {
   position: absolute;
   left: 1px;
@@ -33,7 +37,8 @@
   padding-left: 46px;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(0, 0, 0, 0.6);
     // background: red;
   }

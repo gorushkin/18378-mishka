@@ -6,8 +6,6 @@
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
-  // box-shadow: 0 0 0 3px red;
-  // margin-bottom: 30px;
 }
 
 .product__wrapper {
@@ -33,6 +31,10 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.product__link:focus .product__title {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .product__specs {
@@ -62,6 +64,14 @@
     background: #ececec;
     top: -21px;
     left: 0;
+  }
+}
+
+.product__add-to {
+  outline: none;
+
+  &:focus path {
+    fill: rgba(99, 209, 187, 1);
   }
 }
 

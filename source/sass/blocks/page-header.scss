@@ -12,7 +12,8 @@
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

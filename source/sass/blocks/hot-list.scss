@@ -9,7 +9,8 @@
   @include font-config(15px, bold, 24px);
   margin-right: 60px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 

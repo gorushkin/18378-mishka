@@ -18,6 +18,11 @@
     color: rgba(0, 0, 0, 0.6);
   }
 
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    // outline: none;
+  }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }

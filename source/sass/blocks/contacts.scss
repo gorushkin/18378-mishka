@@ -21,6 +21,7 @@
 .contacts__text {
   @include font-config(15px, normal, 30px, #444444);
   margin-bottom: 30px;
+  outline: none;
 
   &--field {
     width: 55px;
@@ -34,7 +35,8 @@
     box-shadow: 0 1px 0 0 #62d1ba;
   }
 
-  &--email:hover {
+  &--email:hover,
+  &--email:focus {
     color: #46c1ae;
   }
 

@@ -47,8 +47,10 @@
 .making-info__play-icon {
   cursor: pointer;
   transition: 0.1s;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.2);
   }
 

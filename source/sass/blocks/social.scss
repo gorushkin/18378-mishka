@@ -15,8 +15,10 @@
   height: 28px;
   align-items: center;
   justify-content: center;
+  outline: none;
 
-  &:hover path {
+  &:hover path,
+  &:focus path {
     fill: #46c1ae;
   }
 

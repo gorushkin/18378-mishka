@@ -78,7 +78,7 @@
     box-sizing: border-box;
   }
 
-  &--button:hover::before {
+  &--button:hover::before, {
     border: 2px solid #62d1ba;
   }
 
@@ -112,8 +112,10 @@
     margin-bottom: 21px;
     width: 100%;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: inset 0 -2px 0 #62d1ba;
+      outline: none;
     }
   }
 
@@ -123,7 +125,6 @@
     height: 52px;
     margin-bottom: 33px;
     width: 100%;
-    // @include font-config(17px, normal, 18px, #444444);
   }
 
   &--wishes {
@@ -161,9 +162,11 @@
     background-position: 96% 10px;
   }
 
-  &--phone:hover {
+  &--phone:hover,
+  &--phone:focus {
     background-image: url("../img/icon-phone — hover.svg");
     box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
   }
 
   &--email {
@@ -173,17 +176,29 @@
     background-position: 98% 10px;
   }
 
-  &--email:hover {
+  &--email:hover,
+  &--email:focus {
     background-image: url("../img/icon-mail — hover.svg");
     box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
   }
 
   &--phone::-webkit-input-placeholder {
     @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
   }
 
-  &--wishes:hover {
+  &--wishes:hover,
+  &--wishes:focus {
     box-shadow: inset 0 -2px 0 #62d1ba, inset 0 2px 0 #62d1ba, inset -2px 0 0 #62d1ba, inset 2px 0 0 #62d1ba;
+    outline: none;
+  }
+
+  &--radio:focus + .order-form__label::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &--checkbox:focus + .order-form__label::before {
+    border: 2px solid #62d1ba;
   }
 }
 
@@ -198,13 +213,10 @@
   cursor: pointer;
 }
 
-// Выше не троооооооооооооооооооооооооооогаааааааааааааааааать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 @media (min-width: $tablet-width) {
   .order-form__set {
     padding-top: 50px;
     margin-bottom: 25px;
-    // box-shadow: 0 0 0 3px red;
 
     &--grey {
       background: #f1f1f1;
