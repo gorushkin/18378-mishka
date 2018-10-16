@@ -2,7 +2,7 @@
   margin-bottom: 85px;
   // padding-bottom: 70px;
   position: relative;
-  // background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+  // background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
   // background-size: 350px 50px;
 
   &::after {
@@ -10,7 +10,7 @@
     content: "";
     width: 100%;
     height: 20px;
-    background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+    background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
     background-size: 450px 10px;
     bottom: -50px;
   }
@@ -67,17 +67,17 @@
   flex-basis: 50%;
 
   &--left {
-    background: url("../../img/icon-left-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
   }
 
   &--right {
-    background: url("../../img/icon-right-arrow.svg") no-repeat 50% 50%;
+    background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
   }
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    background: url("../../img/review@1x.jpg") no-repeat left top;
+    background: url("../img/review@1x.jpg") no-repeat left top;
     background-size: auto;
     padding-top: 80px;
     // padding-bottom: 105px;
@@ -88,7 +88,7 @@
       content: "";
       width: 100%;
       height: 23px;
-      background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+      background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
       background-size: 750px 15px;
       // padding-bottom: 75px;
       bottom: -5px;
@@ -168,7 +168,7 @@
       content: "";
       width: 100%;
       height: 23px;
-      background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+      background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
       background-size: 1050px 23px;
       bottom: -95px;
       display: none;
@@ -181,7 +181,7 @@
     padding-top: 74px;
     position: relative;
     // box-shadow: 0 0 0 3px red;
-    background: url("../../img/review@1x.jpg") no-repeat left center;
+    background: url("../img/review@1x.jpg") no-repeat left center;
 
 
     &::after {
@@ -190,7 +190,7 @@
       left: 0;
       width: 1050px;
       height: 23px;
-      background: url("../../img/bg-zigzag-line.svg") repeat-x 0 bottom;
+      background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
       background-size: 1050px 23px;
       bottom: -95px;
     }

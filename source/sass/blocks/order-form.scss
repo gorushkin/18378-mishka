@@ -156,25 +156,25 @@
 
   &--phone {
     @include font-config(19px, normal, 18px, #444444);
-    background-image: url("../../img/icon-phone — default.svg");
+    background-image: url("../img/icon-phone — default.svg");
     background-repeat: no-repeat;
     background-position: 96% 10px;
   }
 
   &--phone:hover {
-    background-image: url("../../img/icon-phone — hover.svg");
+    background-image: url("../img/icon-phone — hover.svg");
     box-shadow: inset 0 -2px 0 #62d1ba;
   }
 
   &--email {
     @include font-config(17px, normal, 18px, #444444);
-    background-image: url("../../img/icon-mail — default.svg");
+    background-image: url("../img/icon-mail — default.svg");
     background-repeat: no-repeat;
     background-position: 98% 10px;
   }
 
   &--email:hover {
-    background-image: url("../../img/icon-mail — hover.svg");
+    background-image: url("../img/icon-mail — hover.svg");
     box-shadow: inset 0 -2px 0 #62d1ba;
   }
 
@@ -444,13 +444,13 @@
     }
 
     &--phone {
-      // background-image: url("../../img/icon-phone — default.svg");
+      // background-image: url("../img/icon-phone — default.svg");
       // background-repeat: no-repeat;
       background-position: 99% 11px;
     }
 
     &--email {
-      // background-image: url("../../img/icon-mail — default.svg");
+      // background-image: url("../img/icon-mail — default.svg");
       // background-repeat: no-repeat;
       background-position: 99% 11px;
     }
