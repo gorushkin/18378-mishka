@@ -59,13 +59,13 @@
   pointer-events: none;
   display: inline-block;
 
-  &--tablet {
-    display: none;
-  }
+  // &--tablet {
+  //   display: none;
+  // }
 
-  &--desktop {
-    display: none;
-  }
+  // &--desktop {
+  //   display: none;
+  // }
 }
 
 .page-header__note {
@@ -115,13 +115,13 @@
     margin: 22px 0 26px 0;
     margin-right: auto;
 
-    &--mobile {
-      display: none;
-    }
+    // &--mobile {
+    //   display: none;
+    // }
 
-    &--desktop {
-      display: none;
-    }
+    // &--desktop {
+    //   display: none;
+    // }
   }
 }
 
@@ -162,16 +162,16 @@
     height: 72px;
     margin: 8px 0;
 
-    &--mobile {
-      display: none;
-    }
+    // &--mobile {
+    //   display: none;
+    // }
 
-    &--tablet {
-      display: none;
-    }
+    // &--tablet {
+    //   display: none;
+    // }
 
-    &--desktop {
-      display: block;
-    }
+    // &--desktop {
+    //   display: block;
+    // }
   }
 }

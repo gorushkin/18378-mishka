@@ -59,6 +59,8 @@
 .product-card__image {
   margin: 0;
   margin-bottom: 120px;
+  width: 260px;
+  height: 315px;
 }
 
 .product-card__price {
@@ -81,10 +83,6 @@
 @media (min-width: $tablet-width) {
   .product-card {
     margin-bottom: 80px;
-    // background: url("../img/bg-zigzag-line.svg") repeat-x 0 bottom;
-    // background-size: 1050px 23px;
-    // padding-bottom: 75px;
-    // box-shadow: 0 0 0 3px red;
     position: relative;
 
     &::after {
@@ -241,6 +239,5 @@
     width: 525px;
     height: 636px;
     margin: 0;
-    background: blue;
   }
 }
