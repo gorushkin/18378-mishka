@@ -92,6 +92,7 @@
     // box-shadow: 0 0 0 3px red;
     order: 0;
     margin-bottom: 10px;
+    background: url("../img/video-tablet@1x.jpg") no-repeat center;
     // border-bottom: 1px solid #ededed;
     box-shadow: inset -1px 0 0 #ffffff, inset 1px 0 0 #ffffff, inset 0 -1px 0 #ededed;
   }
@@ -147,6 +148,7 @@
     // background: red;
     margin: 0;
     box-shadow: none;
+    background: url("../img/video-desktop@1x.jpg") no-repeat center;
   }
 
   .making-info__title {
