@@ -21,6 +21,7 @@
 .contacts__text {
   @include font-config(15px, normal, 30px, #444444);
   margin-bottom: 30px;
+  outline: none;
 
   &--field {
     width: 55px;
@@ -33,6 +34,15 @@
   &--email {
     box-shadow: 0 1px 0 0 #62d1ba;
   }
+
+  &--email:hover,
+  &--email:focus {
+    color: #46c1ae;
+  }
+
+  &--email:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map-wrapper {
@@ -40,11 +50,26 @@
   width: 100%;
   overflow: hidden;
   margin-bottom: 38px;
+  position: relative;
+
+  & iframe {
+    z-index: 5;
+    margin: auto;
+    display: block;
+    width: 100%;
+    border: 0;
+  }
 }
 
 .contacts__map {
   width: 100%;
-  margin-top: -90px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .contacts__write-to {
@@ -62,15 +87,16 @@
     @include font-config(43px, bold, 50px);
     margin-bottom: 49px;
     position: relative;
+    margin-left: -5px;
 
     &::after {
       position: absolute;
       content: "";
       width: 47px;
       height: 81px;
-      right: -405px;
+      right: -410px;
       top: -15px;
-      background: url("../../img/icon-flag.svg") no-repeat center;
+      background: url("../img/icon-flag.svg") no-repeat center;
     }
   }
 
@@ -96,7 +122,7 @@
     width: auto;
 
     &--field {
-      margin-right: 26px;
+      margin-right: 24px;
     }
   }
 
@@ -110,7 +136,7 @@
   .contacts__write-to {
     width: 230px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }
 
@@ -121,12 +147,30 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: stretch;
-    margin-bottom: 50px;
+    margin-bottom: 107px;
+    padding-left: 175px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .contacts__wrapper {
-    width: 524px;
+    width: 350px;
     // box-shadow: 0 0 0 3px red;
+    padding-top: 27px;
+    // padding-left: 175px;
+  }
+
+  .contacts__title {
+    @include font-config(53px, bold, 57px);
+
+    &::after {
+
+      right: 321px;
+      top: -8px;
+    }
+  }
+
+  .contacts__info {
+    flex-direction: column;
   }
 
   .contacts__map-wrapper {
@@ -141,5 +185,9 @@
     margin: 0;
     margin-top: -50px;
     height: 50px;
+  }
+
+  .contacts__write-to {
+    margin: 0;
   }
 }

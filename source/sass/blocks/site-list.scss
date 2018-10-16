@@ -12,15 +12,31 @@
   display: block;
   padding-left: 46px;
   position: relative;
+  // box-shadow: 0 0 0 3px red;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    // outline: none;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-list {
   @include listreset;
+  // display: none;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: flex-start;
   }
 
   .site-list__item {
@@ -39,14 +55,19 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     box-shadow: none;
+    margin-right: 35px;
+
+    &:first-child {
+      box-shadow: 1px 0 0 #ececec;
+    }
   }
 
   .site-list__link {
     font-size: 17px;
     margin: 0;
-    margin-right: 70px;
+    margin-right: 35px;
     padding: 27px 0;
     padding-top: 31px;
-    padding-bottom: 23px;
+    padding-bottom: 33px;
   }
 }

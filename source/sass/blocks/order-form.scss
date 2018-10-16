@@ -1,18 +1,38 @@
+.order-form__set {
+  padding-top: 11px;
+  margin-bottom: 22px;
+
+  &--name {
+    margin-bottom: -3px;
+  }
+
+  &--contacts {
+    margin-bottom: 0;
+    padding-top: 14px;
+  }
+
+  &--wishes {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .order-form__title {
   @include font-config(17px, bold, 16px, #63d1bb);
   position: relative;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
 
-  // &::after {
-  //   content: "";
-  //   width: 100%;
-  //   height: 1px;
-  //   background: #63d1bb;
-  //   display: block;
-  //   margin-left: 25px;
-  // }
+  &--name {
+    margin-bottom: 28px;
+  }
+
+  &--contacts {
+    margin-bottom: 7px;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -30,6 +50,7 @@
   @include listreset;
 }
 
+
 .order-form__label {
   @include font-config(17px, bold, 18px);
   display: block;
@@ -38,8 +59,12 @@
 
   &--button {
     padding: 10px 0;
-    padding-left: 50px;
-    margin-bottom: 30px;
+    padding-left: 63px;
+    margin-bottom: 5px;
+  }
+
+  &--checkbox {
+    margin-bottom: 23px;
   }
 
   &--button::before {
@@ -53,18 +78,26 @@
     box-sizing: border-box;
   }
 
+  &--button:hover::before, {
+    border: 2px solid #62d1ba;
+  }
+
+  &--button:active::before {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
   &--radio::before {
     border-radius: 50%;
   }
 
   .order-form__input--radio:checked + &--radio::before {
     background: #63d1bb;
-    box-shadow: inset 0 0 0 8px #ffffff;
+    box-shadow: inset 0 0 0 10px #ffffff;
   }
 
   .order-form__input--checkbox:checked + &--checkbox::before {
-    background: url("../../img/icon-tick.svg") no-repeat 3px 5px;
-    box-shadow: inset 0 0 0 8px #ffffff;
+    background: url("../img/icon-tick.svg") no-repeat 3px 6px;
+    box-shadow: inset 0 0 0 7px #ffffff;
   }
 }
 
@@ -72,96 +105,375 @@
   box-sizing: border-box;
 
   &--info {
+    @include font-config(17px, normal, 18px, #444444);
     border: none;
-    border-bottom: 2px solid #000000;
+    box-shadow: inset 0 -2px 0 #000000;
     height: 52px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 -2px 0 #62d1ba;
+      outline: none;
+    }
+  }
+
+  &--contacts {
+    border: none;
+    box-shadow: inset 0 -2px 0 #000000;
+    height: 52px;
+    margin-bottom: 33px;
     width: 100%;
   }
 
   &--wishes {
-    border: 2px solid #000000;
-    height: auto;
+    border: none;
+    box-shadow: inset 0 -2px 0 #000000, inset 0 2px 0 #000000, inset 2px 0 0 #000000, inset -2px 0 0 #000000;
+    height: 142px;
     padding: 15px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
 
   &--info::-webkit-input-placeholder {
     @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
   }
-}
 
-.order-form__item {
-  margin: 0;
+  &--invalid::-webkit-input-placeholder {
+    color: red;
+  }
+
+  &--invalid::-moz-placeholder {
+    color: red;
+  }
+
+  &--invalid:-ms-input-placeholder {
+    color: red;
+  }
+
+  &--contacts::-webkit-input-placeholder {
+    @include font-config(17px, normal, 18px, rgba(68, 68, 68, 0.3));
+  }
+
+  &--phone {
+    @include font-config(19px, normal, 18px, #444444);
+    background-image: url("../img/icon-phone — default.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 10px;
+  }
+
+  &--phone:hover,
+  &--phone:focus {
+    background-image: url("../img/icon-phone — hover.svg");
+    box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
+  }
+
+  &--email {
+    @include font-config(17px, normal, 18px, #444444);
+    background-image: url("../img/icon-mail — default.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 10px;
+  }
+
+  &--email:hover,
+  &--email:focus {
+    background-image: url("../img/icon-mail — hover.svg");
+    box-shadow: inset 0 -2px 0 #62d1ba;
+    outline: none;
+  }
+
+  &--phone::-webkit-input-placeholder {
+    @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+  }
+
+  &--wishes:hover,
+  &--wishes:focus {
+    box-shadow: inset 0 -2px 0 #62d1ba, inset 0 2px 0 #62d1ba, inset -2px 0 0 #62d1ba, inset 2px 0 0 #62d1ba;
+    outline: none;
+  }
+
+  &--radio:focus + .order-form__label::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &--checkbox:focus + .order-form__label::before {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .order-form_sub-text {
   @include font-config(14px, normal, 16px, #444444);
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .order-form__send-order {
-  margin-bottom: 45px;
+  margin-bottom: 55px;
+  cursor: pointer;
 }
 
-
 @media (min-width: $tablet-width) {
-  .order-form__set--grey {
-    background: #f1f1f1;
+  .order-form__set {
+    padding-top: 50px;
+    margin-bottom: 25px;
+
+    &--grey {
+      background: #f1f1f1;
+    }
+
+    &--name {
+      padding-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    &--contacts {
+      padding-top: 47px;
+      padding-bottom: 31px;
+      margin-bottom: 50px;
+    }
+
+    &--wishes {
+      padding-top: 0;
+      margin-bottom: 28px;
+    }
   }
 
-  .order-form__set {
-    // box-shadow: 0 0 0 3px red;
+  .container {
     display: flex;
     align-items: flex-start;
-    // background: red;
     margin: 0 auto;
+    padding: 0;
   }
 
   .order-form__title {
-    width: 170px;
+    width: 167px;
     flex-shrink: 0;
+    padding: 20px 0;
   }
 
   .order-form__list {
-    // box-shadow: 0 0 0 3px red;
     flex-grow: 1;
 
     &--color-select {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 25px;
     }
   }
 
   .order-form__item--color-select {
-    width: 230px;
+    margin-right: 40px;
+    width: 200px;
   }
 
-  .order-form__item--name {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
+  .order-form__label {
+    @include font-config(19px, bold, 18px);
+    margin-bottom: 26px;
+
+    &--button {
+      padding: 16px 0 18px 80px;
+    }
+
+    &--checkbox {
+      margin-bottom: 24px;
+    }
+
+    &--button::before {
+      width: 53px;
+      height: 53px;
+      top: 0;
+      left: 0;
+      border: 2px solid #444444;
+      box-sizing: border-box;
+    }
+
+    &--radio::before {
+      border-radius: 50%;
+    }
+
+    &--name {
+      margin-right: 25px;
+    }
+
+    .order-form__input--checkbox:checked + &--checkbox::before {
+      background: url("../img/icon-tick.svg") no-repeat 8px 13px;
+      box-shadow: none;
+    }
   }
 
-  .order-form__item--contacts {
-    display: flex;
-    // box-shadow: 0 0 0 3px red;
-    flex-direction: row;
-    align-items: baseline;
-    margin: 0 auto;
+  .order-form__input {
+    &--info {
+      @include font-config(19px, normal, 18px, #444444);
+      height: 52px;
+      margin-bottom: 25px;
+      padding-left: 17px;
+    }
+
+    &--contacts {
+      margin-bottom: 20px;
+      background-color: transparent;
+      padding-left: 17px;
+    }
+
+    &--wishes {
+      height: 142px;
+    }
+
+    &--phone {
+      @include font-config(19px, normal, 18px, #444444);
+      background-position: 95% 11px;
+    }
+
+    &--email {
+      @include font-config(19px, normal, 18px, #444444);
+      background-position: 95% 11px;
+    }
+
+    &--info::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--info:-ms-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--contacts::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--contacts:-ms-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--phone::-webkit-input-placeholder {
+      @include font-config(19px, normal, 18px, rgba(68, 68, 68, 0.3));
+    }
+
+    &--invalid::-webkit-input-placeholder {
+      color: red;
+    }
   }
 
-  .order-form__button-wrapper {
+  .order-form__item {
+    &--name {
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin: 0 auto;
+    }
+  }
+
+  .container--button-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .order-form__send-order {
     order: 0;
+    width: 230px;
+    // margin-left: 175px;
+    margin: 0;
   }
 
   .order-form_sub-text {
+    @include font-config(17px, normal, 30px, #444444);
     order: 1;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__title {
+    // box-shadow: 0 0 0 3px blue;
+    width: 175px;
+    // text-align: center;
+    padding-left: 62px;
+  }
+
+  .order-form__set {
+    margin-bottom: 21px;
+
+    &--name {
+      padding-top: 29px;
+      margin-bottom: 26px;
+    }
+
+    &--contacts {
+      margin-bottom: 50px;
+    }
+  }
+
+  .order-form__list {
+    flex-grow: 1;
+
+    &--color-select {
+      justify-content: flex-start;
+      margin-bottom: 26px;
+    }
+
+    &--name {
+      width: 700px;
+      margin-right: 175px;
+    }
+
+    &--contacts {
+      width: 700px;
+      margin-right: 175px;
+    }
+  }
+
+  .order-form__item--color-select {
+    margin-right: 63px;
+  }
+
+  .order-form__label {
+    &--name {
+      margin-right: 27px;
+    }
+  }
+
+  .order-form__input {
+    &--info {
+      height: 52px;
+      margin-bottom: 24px;
+    }
+
+    &--wishes {
+      width: 700px;
+      margin-right: 175px;
+      height: 142px;
+      margin-bottom: 27px;
+    }
+
+    &--phone {
+      // background-image: url("../img/icon-phone — default.svg");
+      // background-repeat: no-repeat;
+      background-position: 99% 11px;
+    }
+
+    &--email {
+      // background-image: url("../img/icon-mail — default.svg");
+      // background-repeat: no-repeat;
+      background-position: 99% 11px;
+    }
+
+    &--invalid::-webkit-input-placeholder {
+      color: red;
+    }
+  }
+
+  .container--button-wrapper {
+    width: 700px;
   }
 }

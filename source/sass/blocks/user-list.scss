@@ -4,12 +4,26 @@
 
 .user-list__item {
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+  &:hover path {
+    fill: rgba(99, 209, 187, 1);
+  }
+
+  &:active path {
+    fill: rgba(99, 209, 187, 0.3);
+  }
+}
+
+.user-list__link:focus path {
+  fill: rgba(99, 209, 187, 1);
 }
 
 .user-list__img {
   position: absolute;
   left: 1px;
   top: 32px;
+  display: inline-block;
+  pointer-events: none;
 }
 
 .user-list__link {
@@ -22,6 +36,20 @@
   display: block;
   padding-left: 46px;
   position: relative;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+    // background: red;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active path {
+    fill: rgba(99, 209, 187, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

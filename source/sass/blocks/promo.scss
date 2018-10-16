@@ -1,9 +1,11 @@
 .promo {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  // background: red;
 }
 
 .promo__wrapper {
-  background: url("../../img/hero-mobile@1x.jpg") no-repeat center top;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center -20px;
+  background-size: 575px;
   padding-top: 68px;
 }
 
@@ -27,17 +29,36 @@
   padding-right: 30px;
   display: flex;
   align-items: center;
+  transition: 0.2s;
   justify-content: space-between;
-  // padding-top: 26px;
-  // padding-bottom: 29px;
-  background-color: transparent;
+  outline: none;
 
   &--things {
     background-color: #63d1bb;
+    padding-right: 33px;
   }
 
   &--toys {
     background: #56c3b2;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
+
+
+  &:hover path {
+    fill: rgba(20, 144, 128, 1);
+  }
+
+  &:active path {
+    fill: rgba(20, 144, 128, 0.3);
   }
 }
 
@@ -52,22 +73,47 @@
   width: 120px;
   padding-top: 26px;
   padding-bottom: 29px;
+  pointer-events: none;
 }
 
-.svg {
-  width: 40px;
-  height: 62px;
-  background: red;
+.promo__catalog-icon {
+  &--things {
+    width: 40px;
+    height: auto;
+  }
+
+  &--toys {
+    width: 60px;
+    height: auto;
+  }
+
+  path {
+    fill: rgba(20, 144, 128, 0.5);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     margin-top: -42px;
-    margin-bottom: 47px;
+    margin-bottom: 35px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 22px;
+      background: url("../img/bg-zigzag-fill.svg");
+      background-size: 100vw 22px;
+      background-repeat: repeat-x;
+      left: 10px;
+      bottom: 0;
+      z-index: 10;
+    }
   }
 
   .promo__wrapper {
-    background: url("../../img/hero-tablet@1x.jpg") no-repeat center top;
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center top;
     background-size: cover;
     padding-top: 154px;
   }
@@ -88,18 +134,33 @@
   .promo__catalog-title {
     @include font-config(20px, bold, 30px, #ffffff);
     padding-top: 28px;
+    padding-bottom: 42px;
   }
 
   .promo__link {
     flex-grow: 1;
+    width: 50%;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
-
 @media (min-width: $desktop-width) {
+  .promo {
+    margin-top: -42px;
+    background: #f9f9f9;
+    margin-bottom: 62px;
+
+    &::after {
+      height: 34px;
+      background-size: 100vw 34px;
+      bottom: -5px;
+      left: -8px;
+    }
+  }
+
   .promo__wrapper {
-    background: url("../../img/hero-desktop@1x.jpg") no-repeat center top;
-    // background-size: cover;
+    background: url("../img/hero-desktop@1x.jpg") no-repeat center top;
     padding-top: 152px;
   }
 
