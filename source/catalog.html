@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Каталог товаров</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
       <header class="page-header">
@@ -63,9 +65,9 @@
             <li class="catalog__item product">
               <a class="product__image" href="#">
                 <picture>
-                  <source media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.jpg">
-                  <source media="(min-width: 668px)" srcset="img/photo-hare-tablet@1x.jpg">
-                  <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик&#8209;попрыгайчик" width="260" height="195">
+                  <source media="(min-width: 1050px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 668px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                  <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик&#8209;попрыгайчик" width="260" height="195">
                 </picture>
               </a>
               <div class="product__wrapper">
@@ -87,9 +89,9 @@
             <li class="catalog__item product">
               <a class="product__image" href="#">
                 <picture>
-                  <source media="(min-width: 1050px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                  <source media="(min-width: 668px)" srcset="img/photo-bowl-tablet@1x.jpg">
-                  <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+                  <source media="(min-width: 1050px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 668px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья" width="260" height="195">
                 </picture>
               </a>
               <div class="product__wrapper">
@@ -111,9 +113,9 @@
             <li class="catalog__item product">
               <a class="product__image" href="#">
                 <picture>
-                  <source media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.jpg">
-                  <source media="(min-width: 668px)" srcset="img/photo-toys-tablet@1x.jpg">
-                    <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+                  <source media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                    <source media="(min-width: 668px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                    <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек" width="260" height="195">
                 </picture>
 
               </a>
