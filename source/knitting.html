@@ -124,11 +124,11 @@
             <ul class="order-form__list order-form__list--name">
               <li class="order-form__item order-form__item--name">
                 <label for="name" class="order-form__label order-form__label--name">Имя:</label>
-                <input class="order-form__input order-form__input--info" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+                <input class="order-form__input order-form__input--info" required type="text" id="name" name="name" placeholder="Введите ваше имя*">
               </li>
               <li class="order-form__item order-form__item--name">
                 <label for="familyname" class="order-form__label order-form__label--name">Фамилия:</label>
-                <input class="order-form__input order-form__input--info" type="text" id="familyname" name="familyname"
+                <input class="order-form__input order-form__input--info" required type="text" id="familyname" name="familyname"
                   placeholder="Укажите фамилию*">
               </li>
               <li class="order-form__item order-form__item--name">
@@ -144,12 +144,12 @@
             <ul class="order-form__list order-form__list--contacts">
               <li class="order-form__item order-form__item--contacts">
                 <label for="tel" class="order-form__title order-form__title--contacts">Тел</label>
-                <input class="order-form__input order-form__input--contacts order-form__input--phone" type="tel" name="phonenumber" id="tel"
+                <input class="order-form__input order-form__input--contacts order-form__input--phone" required type="tel" name="phonenumber" id="tel"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               </li>
               <li class="order-form__item order-form__item--contacts">
                 <label for="email" class="order-form__title order-form__title--contacts">E&#8209;mail</label>
-                <input class="order-form__input order-form__input--contacts order-form__input--email" type="email" name="email" id="email"
+                <input class="order-form__input order-form__input--contacts order-form__input--email" required type="email" name="email" id="email"
                   placeholder="Ваш Email*">
               </li>
             </ul>
@@ -215,6 +215,6 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="js/order-form.js"></script>
+    <!-- <script src="js/order-form.js"></script> -->
   </body>
 </html>
