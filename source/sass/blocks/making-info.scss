@@ -18,9 +18,7 @@
 
 .making-info__title {
   @include font-config(17px, bold, 24px);
-  // margin-left: 88px;
   position: relative;
-  // margin: 0
   padding: 11px 0 8px 88px;
 
   &::before {
@@ -42,6 +40,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 27px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/video-mobile@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .making-info__play-icon {
@@ -91,12 +94,15 @@
   .making-info__video-frame {
     width: 668px;
     height: 455px;
-    // box-shadow: 0 0 0 3px red;
     order: 0;
     margin-bottom: 10px;
     background: url("../img/video-tablet@1x.jpg") no-repeat center;
-    // border-bottom: 1px solid #ededed;
     box-shadow: inset -1px 0 0 #ffffff, inset 1px 0 0 #ffffff, inset 0 -1px 0 #ededed;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/video-tablet@2x.jpg") no-repeat center;
+      background-size: cover;
+    }
   }
 
   .making-info__title {
@@ -147,10 +153,14 @@
     width: 682px;
     height: 455px;
     order: 0;
-    // background: red;
     margin: 0;
     box-shadow: none;
     background: url("../img/video-desktop@1x.jpg") no-repeat center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/video-desktop@2x.jpg") no-repeat center;
+      background-size: cover;
+    }
   }
 
   .making-info__title {

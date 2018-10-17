@@ -76,9 +76,14 @@
 @media (min-width: $tablet-width) {
   .reviews {
     background: url("../img/review@1x.jpg") no-repeat left top;
-    background-size: auto;
+    background-size: 350px;
     padding-top: 80px;
     margin-bottom: 67px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/review@2x.jpg") no-repeat left top;
+      background-size: 350px auto;
+    }
 
     &::after {
       position: absolute;
@@ -180,6 +185,11 @@
     position: relative;
     // box-shadow: 0 0 0 3px red;
     background: url("../img/review@1x.jpg") no-repeat left center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/review@2x.jpg") no-repeat left center;
+      background-size: 350px auto;
+    }
 
 
     &::after {
