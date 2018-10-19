@@ -25,13 +25,13 @@
     width: 210px;
     outline: none;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: #46c1ae;
       outline: none;
     }
 
-    &:active path {
+    &:active {
       opacity: 0.3;
     }
   }

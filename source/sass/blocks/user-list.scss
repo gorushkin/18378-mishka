@@ -5,11 +5,11 @@
 .user-list__item {
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
-  &:hover path {
+  &:hover .user-list__img {
     fill: rgba(99, 209, 187, 1);
   }
 
-  &:active path {
+  &:active .user-list__img {
     fill: rgba(99, 209, 187, 0.3);
   }
 }
@@ -24,6 +24,7 @@
   top: 32px;
   display: inline-block;
   pointer-events: none;
+  fill: rgba(35, 31, 32, 0.2);
 }
 
 .user-list__link {
