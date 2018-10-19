@@ -26,10 +26,12 @@ window.addEventListener("keydown", function (evt) {
 
 overlay.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (popup.classList.contains("add-to-basket--show")) {
-    popup.classList.remove("add-to-basket--show");
-  }
-  if (overlay.classList.contains("overlay--show")) {
-    overlay.classList.remove("overlay--show");
-  }
+  overlay.classList.remove("overlay--show");
+  popup.classList.remove("add-to-basket--show");
+  // if (popup.classList.contains("add-to-basket--show")) {
+  //   popup.classList.remove("add-to-basket--show");
+  // }
+  // if (overlay.classList.contains("overlay--show")) {
+  //   overlay.classList.remove("overlay--show");
+  // }
 });
