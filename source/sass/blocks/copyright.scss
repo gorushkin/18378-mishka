@@ -6,14 +6,13 @@
   justify-content: space-between;
   padding-bottom: 17px;
   padding-top: 14px;
-  // outline: none;
 
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__logo-image,
+  &:focus .copyright__logo-image {
     fill: #46c1ae;
   }
 
-  &:active path {
+  &:active .copyright__logo-image {
     opacity: 0.3;
   }
 
@@ -35,6 +34,7 @@
 .copyright__logo-image {
   width: 27px;
   height: 34px;
+  fill: #63d1bb;
 }
 
 @media (min-width: $tablet-width) {

@@ -54,7 +54,6 @@
   justify-content: space-between;
   margin-bottom: 28px;
   position: relative;
-  // box-shadow: 0 0 0 3px red;
 
   &::before {
     position: absolute;
@@ -76,11 +75,13 @@
 }
 
 .product__basket-icon {
-  &:hover path {
+  fill: #cccccc;
+
+  &:hover {
     fill: rgba(99, 209, 187, 1);
   }
 
-  &:active path {
+  &:active {
     fill: rgba(99, 209, 187, 0.3);
   }
 }

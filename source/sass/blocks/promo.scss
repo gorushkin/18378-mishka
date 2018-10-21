@@ -58,11 +58,11 @@
   }
 
 
-  &:hover path {
+  &:hover .promo__catalog-icon {
     fill: rgba(20, 144, 128, 1);
   }
 
-  &:active path {
+  &:active .promo__catalog-icon {
     fill: rgba(20, 144, 128, 0.3);
   }
 }
@@ -82,6 +82,8 @@
 }
 
 .promo__catalog-icon {
+  fill: rgba(20, 144, 128, 0.5);
+
   &--things {
     width: 40px;
     height: auto;
@@ -90,10 +92,6 @@
   &--toys {
     width: 60px;
     height: auto;
-  }
-
-  path {
-    fill: rgba(20, 144, 128, 0.5);
   }
 }
 
