@@ -8,9 +8,13 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "4.0.x",
+    "imagemin-webp": "^4.1.0",
     "pixel-glass": "^1.0.13",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
