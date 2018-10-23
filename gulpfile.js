@@ -44,13 +44,12 @@ gulp.task("server", function () {
 gulp.task("start", gulp.series("css", "server"));
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.jpg")
+  return gulp.src("source/img/*.svg")
   .pipe(imagemin([
-    webp()
-  ]))
-  .pipe(rename({
-    extname: ".webp"
-  }))
+    // imagemin.optipng({optimizationLevel: 3}),
+    // imagemin.jpegtran({progressive: true}),
+    imagemin.svgo()
+    ]))
   .pipe(gulp.dest("source/img/webp"))
 });
 
@@ -68,6 +67,5 @@ gulp.task("html", function() {
   .pipe(posthtml([
     include()
   ]))
-  .pipe(gulp.dest("source"))
-
+  .pipe(gulp.dest("source/newhtm"))
 })
