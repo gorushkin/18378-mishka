@@ -9,10 +9,11 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var webp = require("imagemin-webp");
+var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -21,10 +22,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -44,13 +45,19 @@ gulp.task("server", function () {
 gulp.task("start", gulp.series("css", "server"));
 
 gulp.task("images", function() {
-  return gulp.src("source/img/*.svg")
+  return gulp.src("source/img/**/*.{jpg,svg, png}")
   .pipe(imagemin([
-    // imagemin.optipng({optimizationLevel: 3}),
-    // imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
     ]))
-  .pipe(gulp.dest("source/img/webp"))
+  .pipe(gulp.dest("source/img"))
+});
+
+gulp.task("webp", function() {
+  return gulp.src("source/img/*.{jpg, png}")
+  .pipe(webp())
+  .pipe(gulp.dest("source/img/test"))
 });
 
 gulp.task("sprite", function() {
@@ -59,13 +66,37 @@ gulp.task("sprite", function() {
     inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"))
-})
+  .pipe(gulp.dest("build/img"))
+});
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
   .pipe(posthtml([
     include()
   ]))
-  .pipe(gulp.dest("source/newhtm"))
-})
+  .pipe(gulp.dest("build"))
+});
+
+gulp.task("clean", function() {
+  return del("build")
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+
+gulp.task("build", gulp.series (
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html"
+));
