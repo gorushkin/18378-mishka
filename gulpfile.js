@@ -58,10 +58,7 @@ gulp.task("svgfill", function() {
   return gulp.src("source/img/*.svg")
   .pipe(imagemin([
     imagemin.svgo([
-      {
-        mergePaths: true,
-        removeUselessStrokeAndFill: true 
-      }
+      {mergePaths: true, removeUselessStrokeAndFill: true}
     ])
     ]))
   .pipe(gulp.dest("source/img/svg"))
@@ -117,7 +114,6 @@ gulp.task("build", gulp.series (
 gulp.task("refresh", function (done) {
   server.reload();
   done();
- });
+});
 
-
- gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("build", "server"));
