@@ -16,6 +16,7 @@
 .catalog-list {
   @include listreset;
   margin-bottom: 31px;
+  flex-wrap: wrap;
 }
 
 .catalog__item {
@@ -74,15 +75,19 @@
 
   .catalog__wrapper {
     width: 1050px;
-    margin-bottom: 57px;
+    margin-bottom: 7px;
   }
 
   .catalog-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
     margin-bottom: 0;
+    margin-right: -50px;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
   }
 }
