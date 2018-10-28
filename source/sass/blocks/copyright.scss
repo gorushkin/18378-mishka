@@ -28,13 +28,14 @@
 
 .copyright__logo {
   padding-top: 10px;
-  outline: none;
+  // outline: none;
 }
 
 .copyright__logo-image {
   width: 27px;
   height: 34px;
   fill: #63d1bb;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -49,5 +50,9 @@
     padding: 0;
     margin-left: 30px;
     margin-top: 6px;
+
+    &:focus .copyright__logo-image {
+      fill: #46c1ae;
+    }
   }
 }

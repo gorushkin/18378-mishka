@@ -22,7 +22,8 @@
   justify-content: center;
   outline: none;
 
-  &:hover .social__icon {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: #46c1ae;
   }
 
