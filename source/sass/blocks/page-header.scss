@@ -22,6 +22,30 @@
   }
 }
 
+.page-header__toggle {
+  border: none;
+  font-size: 0;
+  width: 20px;
+  padding: 25px;
+  height: 14px;
+  background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 5;
+  outline: none;
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  &--close {
+    background: url("../img/icon-menu-close.svg") no-repeat 50% 50%;
+  }
+}
+
 .page-header__main-nav {
   order: 1;
   z-index: 5;
@@ -76,6 +100,10 @@
     justify-content: space-between;
   }
 
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header__user-list {
     order: 1;
     display: block;
@@ -106,7 +134,7 @@
     display: inline-block;
     width: 112px;
     height: 46px;
-    margin: 22px 0 26px 0;
+    margin: 22px 0 22px 0;
     margin-right: auto;
   }
 }
@@ -140,7 +168,7 @@
   .page-header__note {
     order: 4;
     text-align: right;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 
   .page-header__logo-image {
