@@ -58,12 +58,14 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    max-width: 450px;
+    width: 450px;
+    // box-shadow: 0 0 0 3px red;
+    margin-left: auto;
   }
 
   .site-list__item {
     box-shadow: none;
-    margin-right: 35px;
+    margin-right: 36px;
 
     &:first-child {
       box-shadow: 1px 0 0 #ececec;

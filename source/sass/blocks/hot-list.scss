@@ -2,6 +2,10 @@
   .hot-list {
     @include listreset;
     display: flex;
+    flex-wrap: wrap;
+    width: 819px;
+    margin-left: auto;
+    padding-top: 2px;
   }
 }
 

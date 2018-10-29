@@ -83,3 +83,14 @@
     top: 36px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 451px;
+    margin-right: auto;
+  }
+
+  .user-list__link--search .user-list__img {
+    left: 35px;
+  }
+}

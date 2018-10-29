@@ -24,18 +24,18 @@
 .copyright__text {
   @include font-config(19px, bold, 18px);
   display: inline-block;
+  margin-top: -5px;
 }
 
 .copyright__logo {
   padding-top: 10px;
-  // outline: none;
+  margin-top: -2px;
 }
 
 .copyright__logo-image {
   width: 27px;
   height: 34px;
   fill: #63d1bb;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -46,10 +46,14 @@
     justify-content: flex-end;
   }
 
+  .copyright__text {
+    margin: 0;
+  }
+
   .copyright__logo {
     padding: 0;
     margin-left: 30px;
-    margin-top: 6px;
+    margin-top: 8px;
 
     &:focus .copyright__logo-image {
       fill: #46c1ae;
