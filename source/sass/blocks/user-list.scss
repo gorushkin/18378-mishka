@@ -58,6 +58,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 400px;
+    // box-shadow: 0 0 0 3px red;
   }
 
   .user-list__item {

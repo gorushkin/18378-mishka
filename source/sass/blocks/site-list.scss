@@ -36,6 +36,8 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 342px;
     justify-content: flex-start;
   }
 
@@ -53,6 +55,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    max-width: 450px;
+  }
+
   .site-list__item {
     box-shadow: none;
     margin-right: 35px;
