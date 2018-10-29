@@ -97,9 +97,11 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    margin-top: -42px;
+    // margin-top: 150px;
+    margin-top: -41px;
     margin-bottom: 35px;
     position: relative;
+    border-top: none;
 
     &::after {
       position: absolute;
@@ -109,7 +111,7 @@
       background: url("../img/bg-zigzag-fill.svg");
       background-size: 100vw 22px;
       background-repeat: repeat-x;
-      left: 10px;
+      // left: 10px;
       bottom: 0;
       z-index: 10;
     }

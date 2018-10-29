@@ -41,7 +41,6 @@
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
-    // background: red;
   }
 
   &:active {
@@ -59,8 +58,8 @@
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
-    max-width: 400px;
-    // box-shadow: 0 0 0 3px red;
+    width: 556px;
+    margin-right: auto;
   }
 
   .user-list__item {
@@ -74,7 +73,7 @@
     padding-left: 82px;
 
     &--search {
-      @include font-config(0, bold, 24px);
+      @include font-config(0, bold, 27px);
       width: 82px;
     }
   }

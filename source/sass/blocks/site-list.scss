@@ -37,8 +37,10 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 342px;
+    width: 440px;
     justify-content: flex-start;
+    margin-left: auto;
+    // margin-left: 50px;
   }
 
   .site-list__item {
@@ -50,7 +52,7 @@
     padding: 0;
     width: auto;
     margin-right: 37px;
-    margin-top: 12px;
+    margin-top: 17px;
   }
 }
 
