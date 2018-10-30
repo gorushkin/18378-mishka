@@ -80,12 +80,12 @@
 @media (min-width: $tablet-width) {
   .making-info {
     width: 668px;
+    margin-bottom: 65px;
   }
 
   .making-info__wrapper {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     justify-content: flex-start;
     border: none;
     box-shadow: inset -1px 0 0 #ededed, inset 1px 0 0 #ededed, inset 0 -1px 0 #ededed;
@@ -109,7 +109,7 @@
     @include font-config(20px, bold, 24px);
     order: 1;
     margin-left: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 
     &::before {
       top: 4px;
@@ -135,7 +135,6 @@
 @media (min-width: $desktop-width) {
   .making-info {
     width: 1050px;
-    // height: 455px;
     margin-bottom: 105px;
   }
 
@@ -144,7 +143,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1050px;
-    height: 455px;
     border: 1px solid #ececec;
     box-shadow: none;
   }
@@ -168,11 +166,10 @@
     width: 200px;
     padding: 0;
     margin: 0;
-    box-shadow: 0 0 0 3px red;
-    margin-top: 75px;
-    margin-left: 700px;
+    margin-top: 95px;
+    margin-left: 760px;
     align-self: flex-start;
-    margin-bottom: -132px;
+    margin-bottom: -144px;
 
     &::before {
       top: -54px;
@@ -184,6 +181,8 @@
     width: 230px;
     margin: 0;
     padding: 0;
+    margin-left: 69px;
+    margin-top: 25px;
   }
 
   .making-info__description {

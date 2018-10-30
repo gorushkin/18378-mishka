@@ -224,13 +224,13 @@
 
     &--name {
       padding-top: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
     &--contacts {
       padding-top: 47px;
       padding-bottom: 31px;
-      margin-bottom: 50px;
+      margin-bottom: 52px;
     }
 
     &--wishes {
@@ -395,9 +395,7 @@
 
 @media (min-width: $desktop-width) {
   .order-form__title {
-    // box-shadow: 0 0 0 3px blue;
     width: 175px;
-    // text-align: center;
     padding-left: 62px;
   }
 
@@ -410,7 +408,7 @@
     }
 
     &--contacts {
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
   }
 
