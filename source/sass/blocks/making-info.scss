@@ -135,13 +135,13 @@
 @media (min-width: $desktop-width) {
   .making-info {
     width: 1050px;
-    height: 455px;
+    // height: 455px;
     margin-bottom: 105px;
   }
 
   .making-info__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 1050px;
     height: 455px;
@@ -152,7 +152,7 @@
   .making-info__video-frame {
     width: 682px;
     height: 455px;
-    order: 0;
+    order: 1;
     margin: 0;
     box-shadow: none;
     background: url("../img/video-desktop@1x.jpg") no-repeat center;
@@ -164,14 +164,15 @@
   }
 
   .making-info__title {
-    order: 1;
+    order: 0;
     width: 200px;
     padding: 0;
     margin: 0;
-    margin-top: 95px;
-    margin-left: 9px;
+    box-shadow: 0 0 0 3px red;
+    margin-top: 75px;
+    margin-left: 700px;
     align-self: flex-start;
-    margin-bottom: 32px;
+    margin-bottom: -132px;
 
     &::before {
       top: -54px;
@@ -189,6 +190,7 @@
     @include font-config(15px, normal, 30px, #444444);
     margin-left: 9px;
     width: 225px;
+    margin-top: 150px;
     margin-bottom: 47px;
   }
 
