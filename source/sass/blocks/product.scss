@@ -69,7 +69,7 @@
 .product__add-to {
   outline: none;
 
-  &:focus path {
+  &:focus .product__basket-icon {
     fill: rgba(99, 209, 187, 1);
   }
 }

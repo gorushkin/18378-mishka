@@ -47,6 +47,10 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:focus .user-list__img {
+    fill: rgba(99, 209, 187, 1);
+  }
+
   &:active path {
     fill: rgba(99, 209, 187, 0.3);
   }
@@ -88,9 +92,5 @@
   .user-list {
     width: 451px;
     margin-right: auto;
-  }
-
-  .user-list__link--search .user-list__img {
-    left: 35px;
   }
 }
