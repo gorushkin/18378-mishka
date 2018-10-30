@@ -76,6 +76,7 @@
     @include font-config(53px, bold, 57px);
     padding-bottom: 110px;
     margin-bottom: 115px;
+    box-shadow: none;
 
     &::after {
       height: 22px;
