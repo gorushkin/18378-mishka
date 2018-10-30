@@ -106,16 +106,6 @@
     display: none;
   }
 
-  .page-header__user-list-wrapper {
-    order: 1;
-    display: block;
-  }
-
-  .page-header__main-nav-wrapper {
-    order: 2;
-    display: block;
-  }
-
   .page-header__note-wrapper {
     order: 3;
     display: flex;
@@ -155,6 +145,8 @@
   }
 
   .page-header__user-list-wrapper {
+    order: 1;
+    display: block;
     width: 556px;
     background: #ffffff;
     min-width: 556px;
@@ -163,6 +155,7 @@
   }
 
   .page-header__main-nav-wrapper {
+    display: block;
     order: 3;
     width: 437px;
     flex-grow: 1;
