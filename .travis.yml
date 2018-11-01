@@ -8,6 +8,7 @@ node_js:
 
 before_deploy:
   - npm run build
+  - echo -e "node_modules\npackage-lock.json" > .gitignore
 
 deploy:
   provider: pages
