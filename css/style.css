@@ -1705,6 +1705,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 35;
   background: rgba(255, 255, 255, 0.8);
   display: none; }
   .overlay--show {
@@ -1721,6 +1722,7 @@ img {
   -webkit-box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
           box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   width: 100%;
+  z-index: 50;
   display: none; }
   .add-to-basket--show {
     display: block; }
